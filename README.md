@@ -2,4 +2,4 @@
 
 Visit:
 
-https://Spartanlasergun.github.io
+https://spartanlasergun.github.io
