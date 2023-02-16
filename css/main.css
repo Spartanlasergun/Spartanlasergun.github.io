@@ -1,18 +1,25 @@
-body, header, nav, footer, h1, div, img {
-	margin: 0;
+/*
+body, header, nav, footer, div, img {
+	margin: 5px;
 	padding: 0;
 	border: 0;
 }
-
-img {
-	width: 80px;
-	height: 80px;
-}
+*/
 
 .logo {
 	display: flex;
 	justify-content: center;
+	background-color: #9FCCA7;
 	color: black;
+}
+
+.logo page_name {
+	font-family: "Playfair Display"; 
+	font-size: 36px;
+}
+
+.logo img {
+	padding-top: 10px;
 }
 
 .nav-flex {
@@ -34,9 +41,75 @@ img {
 	color: black;
 }
 
-main {
-	margin: auto;
-	width: 50%;
+.block_one {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.para_one {
+	flex: 45%;
+	background-color: lightgrey;
+	text-align: right;
+	padding: 2%;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+}
+
+.img_one {
+	flex: 50%;
+	padding-left: 5px;
+}
+
+.block_two {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 10px;
+}
+
+.img_two {
+	flex: 50%;
+	justify-content: right;
+	align-content: right;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.para_two {
+	flex: 45%;
+	background-color: lightgrey;
+	text-align: left;
+	padding: 2%;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+}
+
+
+.block_three {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 10px;
+}
+
+.para_three {
+	flex: 45%;
+	background-color: lightgrey;
+	text-align: right;
+	padding: 2%;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+}
+
+.img_three {
+	flex: 50%;
+	padding-left: 5px;
 }
 
 footer p {
