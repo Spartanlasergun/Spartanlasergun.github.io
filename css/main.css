@@ -5,17 +5,23 @@ body, header, nav, footer, div, img {
 	border: 0;
 }
 */
+html {
+	background-color: #F1DBBF;
+}
 
 .logo {
 	display: flex;
 	justify-content: center;
-	background-color: #9FCCA7;
+	background-color: #698269;
 	color: black;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
 .logo page_name {
 	font-family: "Playfair Display"; 
 	font-size: 36px;
+	color: black;
 }
 
 .logo img {
@@ -26,14 +32,19 @@ body, header, nav, footer, div, img {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: slategrey;
+	border-top: 2px solid #AA5656;
 }
 
 .nav-flex a {
-	color: white;
-	padding: 14px 40px;
+	color: black;
+	padding: 14px 50px;
 	text-decoration: none;
 	text-align: center;
+	background-color: #B99B6B;
+	border-right: 2px solid #AA5656;
+	border-left: 2px solid #AA5656;
+	border-bottom: 2px solid #AA5656;
+	margin-bottom: 20px;
 }
 
 .nav-flex a:hover {
@@ -44,31 +55,35 @@ body, header, nav, footer, div, img {
 .block_one {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: 200px;
-	margin-left: 200px;
+	margin-right: 300px;
+	margin-left: 300px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
 .para_one {
 	flex: 45%;
-	background-color: lightgrey;
+	background-color: #F1DBBF;
 	text-align: right;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
+	border-right: 2px solid #AA5656;
+	border-bottom: 2px solid #AA5656;
 }
 
 .img_one {
 	flex: 50%;
 	padding-left: 5px;
+	padding-top: 40px;
+	border-bottom: 2px solid #AA5656;
 }
 
 .block_two {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 250px;
+	margin-right: 250px;
 	margin-bottom: 10px;
 }
 
@@ -78,15 +93,18 @@ body, header, nav, footer, div, img {
 	align-content: right;
 	text-align: right;
 	padding-right: 5px;
+	border-right: 2px solid #AA5656;
+	border-top: 2px solid #AA5656;
 }
 
 .para_two {
 	flex: 45%;
-	background-color: lightgrey;
+	background-color: #F1DBBF;
 	text-align: left;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
+	border-bottom: 2px solid #AA5656;
 }
 
 
@@ -100,16 +118,19 @@ body, header, nav, footer, div, img {
 
 .para_three {
 	flex: 45%;
-	background-color: lightgrey;
+	background-color: #F1DBBF;
 	text-align: right;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
+	border-right: 2px solid #AA5656;
+	border-top: 2px solid #AA5656;
 }
 
 .img_three {
 	flex: 50%;
 	padding-left: 5px;
+	border-top: 2px solid #AA5656;
 }
 
 footer p {
