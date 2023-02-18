@@ -6,21 +6,22 @@ body, header, nav, footer, div, img {
 }
 */
 html {
-	background-color: #F1DBBF;
+	background-color: #dad7cd;
 }
 
 .logo {
 	display: flex;
 	justify-content: center;
-	background-color: #698269;
+	background-color: #a3b18a;
 	color: black;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+	border-right: 2px solid #3a5a40;
+	border-left: 2px solid #3a5a40;
+	border-bottom: 2px solid #3a5a40;
 }
 
 .logo page_name {
 	font-family: "Playfair Display"; 
-	font-size: 36px;
+	font-size: 34px;
 	color: black;
 }
 
@@ -31,19 +32,47 @@ html {
 .nav-flex {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	border-top: 2px solid #AA5656;
+	background-color: #3a5a40;
+}
+
+.Home {
+	flex: 12%;
+	text-align: center;
+}
+
+.Algebra {
+	flex: 12%;
+	text-align: center;
+}
+
+.Statistics {
+	flex: 12%;
+	text-align: center;
+}
+
+.Trigonometry {
+	flex: 12%;
+	text-align: center;
+}
+
+.Geometry {
+	flex: 12%;
+	text-align: center;
+}
+
+.Calculus {
+	flex: 12%;
+	text-align: center;
 }
 
 .nav-flex a {
 	color: black;
-	padding: 14px 50px;
+	padding: 5px 35px;
 	text-decoration: none;
 	text-align: center;
-	background-color: #B99B6B;
-	border-right: 2px solid #AA5656;
-	border-left: 2px solid #AA5656;
-	border-bottom: 2px solid #AA5656;
+	background-color: #588157;
+	border-right: 2px solid #3a5a40;
+	border-left: 2px solid #3a5a40;
 	margin-bottom: 20px;
 }
 
@@ -52,31 +81,90 @@ html {
 	color: black;
 }
 
+.Home a{
+	background-color: #dad7cd;
+	border: 2px solid #344e41;
+}
+
+.nav-clone {
+	display: flex;
+	flex-direction: row;
+	background-color: #344e41;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin-top: 10px;
+}
+
+.Home-clone {
+	flex: 12%;
+	text-align: center;
+}
+
+.Algebra-clone {
+	flex: 12%;
+	text-align: center;
+}
+
+.Statistics-clone {
+	flex: 12%;
+	text-align: center;
+}
+
+.Trigonometry-clone {
+	flex: 12%;
+	text-align: center;
+}
+
+.Geometry-clone {
+	flex: 12%;
+	text-align: center;
+}
+
+.Calculus-clone {
+	flex: 12%;
+	text-align: center;
+}
+
+.nav-clone a {
+	color: #344e41;
+	padding: 2px 50px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 2px;
+	background-color: #344e41;
+	margin-bottom: 20px;
+}
+
+.Home-clone a {
+	padding-top: 16px;
+}
+
+
 .block_one {
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 300px;
 	margin-left: 300px;
-	margin-top: 5px;
+	margin-top: 50px;
 	margin-bottom: 10px;
 }
 
 .para_one {
 	flex: 45%;
-	background-color: #F1DBBF;
+	background-color: #dad7cd;
 	text-align: right;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
-	border-right: 2px solid #AA5656;
-	border-bottom: 2px solid #AA5656;
+	border-right: 2px solid #3a5a40;
+	border-bottom: 2px solid #3a5a40;
 }
 
 .img_one {
 	flex: 50%;
 	padding-left: 5px;
 	padding-top: 40px;
-	border-bottom: 2px solid #AA5656;
+	border-bottom: 2px solid #3a5a40;
 }
 
 .block_two {
@@ -93,18 +181,18 @@ html {
 	align-content: right;
 	text-align: right;
 	padding-right: 5px;
-	border-right: 2px solid #AA5656;
-	border-top: 2px solid #AA5656;
+	border-right: 2px solid #3a5a40;
+	border-top: 2px solid #3a5a40;
 }
 
 .para_two {
 	flex: 45%;
-	background-color: #F1DBBF;
+	background-color: #dad7cd;
 	text-align: left;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
-	border-bottom: 2px solid #AA5656;
+	border-bottom: 2px solid #3a5a40;
 }
 
 
@@ -118,19 +206,19 @@ html {
 
 .para_three {
 	flex: 45%;
-	background-color: #F1DBBF;
+	background-color: #dad7cd;
 	text-align: right;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
-	border-right: 2px solid #AA5656;
-	border-top: 2px solid #AA5656;
+	border-right: 2px solid #3a5a40;
+	border-top: 2px solid #3a5a40;
 }
 
 .img_three {
 	flex: 50%;
 	padding-left: 5px;
-	border-top: 2px solid #AA5656;
+	border-top: 2px solid #3a5a40;
 }
 
 footer p {
