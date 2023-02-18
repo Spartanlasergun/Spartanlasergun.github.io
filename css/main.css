@@ -1,28 +1,24 @@
-/*
-body, header, nav, footer, div, img {
-	margin: 5px;
-	padding: 0;
-	border: 0;
-}
-*/
 html {
-	background-color: #dad7cd;
+	background-color: #252422;
+}
+
+body {
+	margin-top: 0;
 }
 
 .logo {
 	display: flex;
 	justify-content: center;
-	background-color: #a3b18a;
-	color: black;
-	border-right: 2px solid #3a5a40;
-	border-left: 2px solid #3a5a40;
-	border-bottom: 2px solid #3a5a40;
+	background-color: #564D41;
+	border-right: 2px solid #403d39;
+	border-left: 2px solid #403d39;
+	border-bottom: 2px solid #403d39;
 }
 
 .logo page_name {
 	font-family: "Playfair Display"; 
 	font-size: 34px;
-	color: black;
+	color: #fffcf2;
 }
 
 .logo img {
@@ -32,7 +28,9 @@ html {
 .nav-flex {
 	display: flex;
 	flex-direction: row;
-	background-color: #3a5a40;
+	background-color: #403d39;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .Home {
@@ -66,33 +64,37 @@ html {
 }
 
 .nav-flex a {
-	color: black;
+	color: #fffcf2;
 	padding: 5px 35px;
 	text-decoration: none;
 	text-align: center;
-	background-color: #588157;
-	border-right: 2px solid #3a5a40;
-	border-left: 2px solid #3a5a40;
-	margin-bottom: 20px;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	background-color: #6F6250;
+	border-right: 2px solid #403d39;
+	border-left: 2px solid #403d39;
 }
 
 .nav-flex a:hover {
 	background-color: grey;
-	color: black;
+	color: #FFFFFF;
 }
 
 .Home a{
-	background-color: #dad7cd;
-	border: 2px solid #344e41;
+	background-color: #252422;
+	border: 2px solid #eb5e28;
 }
 
 .nav-clone {
 	display: flex;
 	flex-direction: row;
-	background-color: #344e41;
+	background-color: #403d39;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	margin-top: 10px;
+	border-right: 2px solid #eb5e28;
+	border-left: 2px solid #eb5e28;
+	border-top: 2px solid #eb5e28;
 }
 
 .Home-clone {
@@ -126,12 +128,12 @@ html {
 }
 
 .nav-clone a {
-	color: #344e41;
+	color: #403d39;
 	padding: 2px 50px;
 	text-decoration: none;
 	text-align: center;
 	font-size: 2px;
-	background-color: #344e41;
+	background-color: #403d39;
 	margin-bottom: 20px;
 }
 
@@ -140,31 +142,49 @@ html {
 }
 
 
+.body_title {
+	display: flex;
+	justify-content: center;
+	border-right: 2px solid #eb5e28;
+	border-left: 2px solid #eb5e28;
+}
+
+.intro {
+	text-align: center;
+	font-family: "Playfair Display"; 
+	font-size: 25px;
+	color: #FFFFFF;
+	text-decoration: underline;
+	text-decoration-color: #eb5e28;
+}	
+
+
+
 .block_one {
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 300px;
 	margin-left: 300px;
-	margin-top: 50px;
 	margin-bottom: 10px;
 }
 
 .para_one {
 	flex: 45%;
-	background-color: #dad7cd;
+	background-color: #252422;
 	text-align: right;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
-	border-right: 2px solid #3a5a40;
-	border-bottom: 2px solid #3a5a40;
+	color: #fffcf2;
+	border-right: 2px solid #eb5e28;
+	border-bottom: 2px solid #eb5e28;
 }
 
 .img_one {
 	flex: 50%;
 	padding-left: 5px;
 	padding-top: 40px;
-	border-bottom: 2px solid #3a5a40;
+	border-bottom: 2px solid #eb5e28;
 }
 
 .block_two {
@@ -181,18 +201,19 @@ html {
 	align-content: right;
 	text-align: right;
 	padding-right: 5px;
-	border-right: 2px solid #3a5a40;
-	border-top: 2px solid #3a5a40;
+	border-right: 2px solid #eb5e28;
+	border-top: 2px solid #eb5e28;
 }
 
 .para_two {
 	flex: 45%;
-	background-color: #dad7cd;
+	background-color: #252422;
 	text-align: left;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
-	border-bottom: 2px solid #3a5a40;
+	color: #fffcf2;
+	border-bottom: 2px solid #eb5e28;
 }
 
 
@@ -206,34 +227,43 @@ html {
 
 .para_three {
 	flex: 45%;
-	background-color: #dad7cd;
+	background-color: #252422;
 	text-align: right;
 	padding: 2%;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
-	border-right: 2px solid #3a5a40;
-	border-top: 2px solid #3a5a40;
+	color: #fffcf2;
+	border-right: 2px solid #eb5e28;
+	border-top: 2px solid #eb5e28;
 }
 
 .img_three {
 	flex: 50%;
 	padding-left: 5px;
-	border-top: 2px solid #3a5a40;
+	border-top: 2px solid #eb5e28;
 }
 
-footer p {
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #564D41;
+}
+
+.footer p {
 	font-size: 0.75em;
 	text-align: center;
 	padding: 0 1em;
+	color: #fffcf2;
 }
 
-footer p a {
-	color: #000000;
+.footer p a {
 	text-decoration: none;
 }
 
+
 .external-link {
-	color: #666600;
+	color: #eb5e28;
 	font-weight: bold;
 	text-decoration: none;
 }
