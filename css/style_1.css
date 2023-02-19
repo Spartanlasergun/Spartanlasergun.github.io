@@ -1,0 +1,219 @@
+/* Set website background */
+html {
+	background-color: #252422;
+}
+
+/* adjust margin to the top */
+body {
+	margin-top: 0;
+}
+
+/* style logo and header */
+.logo {
+	display: flex;
+	justify-content: center;
+	background-color: #564D41;
+	border-right: 2px solid #403d39;
+	border-left: 2px solid #403d39;
+	border-bottom: 2px solid #403d39;
+}
+
+.logo page_name {
+	font-family: "Playfair Display"; 
+	font-size: 34px;
+	color: #fffcf2;
+}
+
+.logo img {
+	padding-top: 10px;
+}
+
+/* style navigation bar */
+.nav-flex {
+	display: flex;
+	flex-direction: row;
+	background-color: #403d39;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.nav_box {
+	flex: 12%;
+	text-align: center;
+}
+
+.nav_select {
+	flex: 12%;
+	text-align: center;
+}
+
+.nav-flex a {
+	color: #fffcf2;
+	padding: 5px 35px;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	background-color: #6F6250;
+	border-right: 2px solid #403d39;
+	border-left: 2px solid #403d39;
+}
+
+.nav-flex a:hover {
+	background-color: grey;
+	color: #FFFFFF;
+}
+
+.nav_select a{
+	background-color: #252422;
+	border: 2px solid #eb5e28;
+}
+
+/* clone navigation bar for further styling */
+.nav-clone {
+	display: flex;
+	flex-direction: row;
+	background-color: #403d39;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin-top: 10px;
+	border-right: 2px solid #eb5e28;
+	border-left: 2px solid #eb5e28;
+	border-top: 2px solid #eb5e28;
+}
+
+.clone_box {
+	flex: 12%;
+	text-align: center;
+}
+
+.clone_select {
+	flex: 12%;
+	text-align: center;
+}
+
+.nav-clone a {
+	color: #403d39;
+	padding: 2px 50px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 2px;
+	background-color: #403d39;
+	margin-bottom: 20px;
+}
+
+.clone_select a {
+	padding-top: 17px;
+}
+
+/* style page sidebar and main body */
+.main {
+	display: flex;
+}
+
+.sidebar {
+	flex: 15%;
+	flex-direction: column;
+	border-left: 2px solid #eb5e28;
+	border-right: 2px solid #eb5e28;
+	border-top-right-radius: 10px;
+	padding: 10px;
+}
+
+.page_info {
+	flex: 85%;
+	border-right: 2px solid #eb5e28;
+	padding: 10px;
+}
+
+.topics-heading {
+	border-top: 2px solid #403d39;
+	border-bottom: 2px solid #403d39;
+	text-align: center;
+	font-family: "Georgia";
+	font-size: 22px;
+	color: #eb5e28;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.selected_box {
+	background-color: #564D41;
+	border-top: 2px solid #eb5e28;
+	border-bottom: 2px solid #eb5e28;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.selected_box a {
+	text-decoration: none;
+	font-family: "Source Sans Pro";
+	font-size: 17px;
+	color: #fffcf2;
+}
+
+.selected_box p {
+	text-decoration: none;
+	text-align: center;
+}
+
+.link_box {
+	border-bottom: 2px solid #403d39;
+}
+
+.link_box :hover {
+	background-color: #564D41;
+}
+
+.topic-link {
+	text-decoration: none;
+	text-align: left;
+	font-family: "Source Sans Pro";
+	font-size: 17px;
+	color: #fffcf2;
+}
+
+.section_box {
+	background-color: #564D41;
+	border-top: 2px solid #403d39;
+	border-bottom: 2px solid #403d39;
+	padding: 10px;
+}
+
+.section_heading {
+	text-align: left;
+	font-family: "Playfair Display";
+	font-size: 17px;
+	color: white;
+}
+
+
+/* style page footer */
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #564D41;
+}
+
+.footer p {
+	font-size: 0.75em;
+	text-align: center;
+	padding: 0 1em;
+	color: #fffcf2;
+}
+
+.footer p a {
+	text-decoration: none;
+}
+
+
+.external-link {
+	color: #eb5e28;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+
