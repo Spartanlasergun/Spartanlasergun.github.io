@@ -106,7 +106,7 @@ body {
 	padding-top: 17px;
 }
 
-/* style page sidebar and main body */
+/* style page sidebar*/
 .main {
 	display: flex;
 }
@@ -173,6 +173,8 @@ body {
 	color: #fffcf2;
 }
 
+
+/*style page information */
 .section_box {
 	background-color: #564D41;
 	border-top: 2px solid #403d39;
@@ -187,6 +189,36 @@ body {
 	color: white;
 }
 
+.slide_box {
+	display: flex;
+}
+
+.slide_text {
+	flex: 50%;
+	padding: 10px;
+	color: white;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	line-height: 200%;
+}
+
+.slide_img_left {
+	flex: 50%;
+	padding: 10px;
+	color: white;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	text-align: left;
+}
+
+.slide_img_right {
+	flex: 50%;
+	padding: 10px;
+	color: white;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	text-align: right;
+}
 
 /* style page footer */
 .footer {
