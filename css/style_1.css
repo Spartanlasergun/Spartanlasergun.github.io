@@ -5,12 +5,16 @@ html {
 
 /* adjust margin to the top */
 body {
-	margin-top: 0;
+	margin: 0;
+	padding: 0;
+	top: 0;
 }
 
 /* style logo and header */
 .logo {
 	display: flex;
+	position: fixed;
+	width: 99.6%;
 	justify-content: center;
 	background-color: #564D41;
 	border-right: 2px solid #403d39;
@@ -31,6 +35,9 @@ body {
 /* style navigation bar */
 .nav-flex {
 	display: flex;
+	position: fixed;
+	width: 99.9%;
+	top: 95px;
 	flex-direction: row;
 	background-color: #403d39;
 	border-bottom-left-radius: 10px;
@@ -73,10 +80,12 @@ body {
 .nav-clone {
 	display: flex;
 	flex-direction: row;
+	position: fixed;
+	width: 99.5%;
+	top: 114px;
 	background-color: #403d39;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
 	margin-top: 10px;
 	border-right: 2px solid #eb5e28;
 	border-left: 2px solid #eb5e28;
@@ -110,7 +119,7 @@ body {
 /* style page sidebar*/
 .main {
 	display: flex;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .sidebar {
@@ -119,11 +128,11 @@ body {
 	position: fixed;
 	overflow: auto;
 	height: 300px;
+	top: 145px;
 	width: 14%;
 	border-left: 2px solid #eb5e28;
 	border-right: 2px solid #eb5e28;
 	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	padding: 15px;
@@ -154,11 +163,40 @@ body {
 
 .page_info {
 	flex: 85%;
+	flex-direction: column;
+	position: fixed;
+	overflow: auto;
+	height: 465px;
+	width: 81%;
 	border-right: 2px solid #eb5e28;
 	border-left: 2px solid #eb5e28;
 	border-top-left-radius: 10px;
 	padding: 10px;
 	margin-left: 17%;
+	top: 145px;
+}
+
+.page_info::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+}
+
+.page_info::-webkit-scrollbar-track {
+	background: #403d39;        /* color of the tracking area */
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.page_info::-webkit-scrollbar-thumb {
+	background-color: #6F6250;    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.page_info::-webkit-scrollbar-thumb:vertical:hover {
+	background-color: #eb5e28;    /* color of the scroll thumb */
+}
+
+.page_info::-webkit-scrollbar-thumb:vertical:active {
+	background-color: #eb5e28;    /* color of the scroll thumb */
 }
 
 .topics-heading {
@@ -257,36 +295,6 @@ body {
 	text-align: right;
 }
 
-
-.bullets {
-	display: flex;
-	flex-direction: column;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-bottom: 5%;
-	border-bottom: 2px solid #403d39;
-}
-
-.steps {
-	display: flex;
-	flex-direction: column;
-	margin-left: 2%;
-	margin-right: 2%;
-	padding: 2%;
-}
-
-.step_box {
-	color: white;
-	font-family: "Source Sans Pro";
-	font-size: 15px;
-	text-align: left;
-	line-height: 200%;
-	margin-bottom: 2%;
-	padding-left: 2%;
-	border-left: 2px solid #403d39;
-}
-
-
 .plain_text {
 	color: white;
 	font-family: "Source Sans Pro";
@@ -300,8 +308,11 @@ body {
 .footer {
 	display: flex;
 	flex-direction: column;
+	position: fixed;
+	bottom: 20px;
 	justify-content: center;
 	background-color: #564D41;
+	margin-right: 83%;
 }
 
 .footer p {
