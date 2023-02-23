@@ -119,6 +119,7 @@ body {
 	position: fixed;
 	overflow: auto;
 	height: 300px;
+	width: 14%;
 	border-left: 2px solid #eb5e28;
 	border-right: 2px solid #eb5e28;
 	border-top-right-radius: 10px;
