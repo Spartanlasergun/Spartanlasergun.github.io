@@ -76,6 +76,7 @@ body {
 	background-color: #403d39;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 	margin-top: 10px;
 	border-right: 2px solid #eb5e28;
 	border-left: 2px solid #eb5e28;
@@ -109,21 +110,54 @@ body {
 /* style page sidebar*/
 .main {
 	display: flex;
+	overflow: hidden;
 }
 
 .sidebar {
 	flex: 15%;
 	flex-direction: column;
+	position: fixed;
+	overflow: auto;
+	height: 300px;
 	border-left: 2px solid #eb5e28;
 	border-right: 2px solid #eb5e28;
 	border-top-right-radius: 10px;
-	padding: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 15px;
+}
+
+.sidebar::-webkit-scrollbar {
+	width: 6px;               /* width of the entire scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+	background: #403d39;        /* color of the tracking area */
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+	background-color: #6F6250;    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.sidebar::-webkit-scrollbar-thumb:vertical:hover {
+	background-color: #eb5e28;    /* color of the scroll thumb */
+}
+
+.sidebar::-webkit-scrollbar-thumb:vertical:active {
+	background-color: #eb5e28;    /* color of the scroll thumb */
 }
 
 .page_info {
 	flex: 85%;
 	border-right: 2px solid #eb5e28;
+	border-left: 2px solid #eb5e28;
+	border-top-left-radius: 10px;
 	padding: 10px;
+	margin-left: 17%;
 }
 
 .topics-heading {
