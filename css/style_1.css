@@ -127,7 +127,7 @@ body {
 	flex-direction: column;
 	position: fixed;
 	overflow: auto;
-	height: 55%;
+	height: 350px;
 	top: 145px;
 	width: 14%;
 	border-left: 2px solid #eb5e28;
