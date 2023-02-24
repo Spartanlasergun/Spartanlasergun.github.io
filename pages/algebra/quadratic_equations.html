@@ -146,26 +146,113 @@
 				</div>
 
 				<div class="plain_text">
-					There are several ways to solve for the roots of a quadratic equation, including: factoring, completing the square, and using the quadratic formula. My intention is to speak only of the quadratic formula. Notwithstanding, I think it is important to offer some defense as it concerns my neglect of the other two approaches, as it will give some unique insight into how quadratics are applied to the real world.
+					There are various methods to find the roots of a quadratic equation, such as factoring, completing the square, and using the quadratic formula. In this discussion, I will focus solely on the quadratic formula. However, it's worth noting that each method has its own advantages and disadvantages. While I won't delve into the other two approaches in this conversation, I believe it's essential to provide a justification for my decision, as it can shed light on how quadratics are utilized in practical applications.
 				</div>
 
 				<div class="slide_box">
 					<div class="plain_text">
-						The problem with factoring, lies with the typical complexity that arises from real world problems. I am referring to the simple fact that real world problems rarely ever yield quadratics that can easily be solved by factoring. The purpose of solving quadratics by factoring, has always been to teach 'factoring' itself, rather that to explore the utility of quadratic equations.
+						The problem with factoring quadratic equations is that real-world problems usually involve more complex equations that cannot be easily solved through this method. Factoring is often taught as a means to learn the process itself rather than to highlight the practical applications of quadratic equations.
 					</div>
 				</div>
 
 				<div class="slide_box">
 					<div class="plain_text">
-						Completing the square is much more robust than factoring, but is essentially the same as the quadratic formula, in that the quadratic formula itself is a product of completing the square. (We will discuss this at length as we derive the quadratic formula later on). However, practical application of a quadratic model to a problem is much easier done using the quadratic formula, which is much wider known and is easily applied in the context of programming and with other relevant software.
+						Completing the square is a more powerful technique than factoring, but it is closely related to the quadratic formula. In fact, the quadratic formula is derived from completing the square, and we will explore this derivation in depth later on. However, when it comes to practical applications, the quadratic formula is typically the more convenient option. This is because it is widely recognized and easily implemented in programming and other relevant software. 
 					</div>
 				</div>
 
 				<div class="slide_box">
 					<div class="plain_text">
-						The bottom line becomes, that I have at hand, three methods for producing the same solution. Since none of these solutions will yield a different answer than the other, I have personally found it the most sensible to utilize the one that is objectively the most practical - the Quadratic Formula.
+						The bottom line is, that I have at hand, three unique methods that produce the same solution. Since none of these solutions will yield a different answer than the other, I have personally found it the most sensible to utilize the one that is objectively the most practical - the Quadratic Formula.
 					</div>
 				</div>
+
+				<div class="sub_box">
+					<derivation class="sub_heading">A Quick Review Of Completing The Square</derivation>
+				</div>
+
+
+				<div class="plain_text">
+					Unlike factoring, which can only be performed on quadratic equations that are 'perfect squares', completing the square involves forcefully manipulating the varibles for any given quadratic equation, so that it necessarily becomes a perfect square. When we apply this technique to the standard form of the quadratic equation ( \(ax^2 + bx + c = 0\) ), the result is the quadratic formula. 
+					<br>
+					<br>
+					Since completing the sqaure is significant to understanding the derivation of the quadratic formula, I will begin with an example of completing the square for a simple quadratic, that will take us through the underlying thought process that goes into the quadratic formula.
+				</div>
+
+				<div class="slide_box">
+					<div class="plain_text">
+						Consider the following Quadratic Equation: \[x^2 - 3x - {4 \over 5} = 0 \]
+
+						In completeing the square, my goal is to make this a perfect square.
+
+						Essentially I would like to arrive at:
+						\[x^2 - 3x - {4 \over 5} = (x - a)^2 \]
+
+						Here \( (x - a)^2 \) represents the binomial that we commonly arive at when solving for the roots of a quadratic equation.
+						<br>
+						<br>
+						If we expand that binomial we get \(x^2 + 2ax + a^2 \) , which implies:
+						\[x^2 + 2ax + a^2 = (x - a)^2 \]
+						How is this relevant to the quadratic we want to solve? Well, this equation can be considered an 'identity' that we can now begin to model our original equation around, to create a perfect square.
+						<br>
+						<br>
+						We can begin by rewriting the equation as follows:
+						\[x^2 -3x = {4 \over 5} \]
+						Looking back at our identity - \(x^2 + 2ax + a^2\) , in beginning to model our quadratic to this equation we can easily identify that 
+						\[2a = -3\]
+						Hence: 
+						\[a = {-3 \over 2} \ and \ a^2 = {9 \over 4} \]
+						Adding \(a^2\) into our equation, we get:
+						\[x^2 -3x + {9 \over 4} = {4 \over 5} + {9 \over 4} \]
+						\[x^2 -3x + {9 \over 4} = {61 \over 20} \]
+						So by design we are now left with a quadratic that is a perfect square \(x^2 -3x + {9 \over 4} \). If you examine the equation you will notice that:
+						\[{-3 \over 2} * {-3 \over 2} = {9 \over 4} \]
+						and 
+						\[{-3 \over 2} + {-3 \over 2} = -3\]
+						(Remember this is by design)
+						Hence we have:
+						\[(x - {3 \over 2})^2 = {61 \over 20} \]
+						Taking the root of both sides gives us:
+						\[x - {3 \over 2} = \pm \sqrt{{61 \over 20}} \]
+						Hence:
+						\[x = {3 \over 2} \pm \sqrt{{61 \over 20}} \]
+						Thus, 
+						\[x = 3.25 \ and \ x = -0.25 \]
+					</div>
+				</div>
+
+				<div class="sub_box">
+					<derivation class="sub_heading">Deriving The Quadratic Formula</derivation>
+				</div>
+
+				<div class="slide_box">
+					<div class="plain_text">
+						As stated earlier, deriving the quadratic formula is the same as completing the square on the standard form of the quadratic function, i.e.
+						\[ax^2 + bx + c = 0 \]
+
+						To utilize our identity \(x^2 + 2ax + a^2 = (x - a^2) \) we can rearrange the equation a bit:
+						\[ax^2 + bx = -c \]
+
+						Dividing both sides by the coefficent 'a', we get:
+						\[x^2 + {b \over a}(x) = {-c \over a} \]
+
+						Using our identity, 
+						\[2a = {b \over a} \]
+						\[a = {b \over 2a} \]
+						\[a^2 = ({b \over 2a})^2 \]
+
+						To recreate our identity, we need to add this \(a^2\) value to the equation. The result is:
+						\[x^2 + {b \over a}(x) + ({b \over 2a})^2 = {-c \over a} + ({b \over 2a})^2 \]
+						\[(x + {b \over 2a})^2 =  {-c \over a} + {b^2 \over 4a^2} \]
+						\[(x + {b \over 2a})^2 = {-4ac \over 4a^2} + {b^2 \over 4a^2} \]
+						\[(x + {b \over 2a})^2 = {b^2 - 4ac \over 4a^2} \]
+						Taking the root of both sides:
+						\[x + {b \over 2a} = {\sqrt{b^2 - 4ac} \over 4a} \]
+						\[x = {\sqrt{b^2 - 4ac} \over 4a} - {b \over 2a} \]
+						Thus we arrive at the quadratic formula:
+						\[x = {-b \pm \sqrt{b^2 - 4ac} \over 2a} \]
+					</div>
+				</div>		
 
 				<div class="plain_text">
                 	When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
@@ -177,6 +264,9 @@
 				</div>
 
 				<div class="plain_text">
+					The concepts surrounding the quadratic equation are all relatively boring. However, there are a few interesting relationships between the quadratic function and some other mathematical concepts.
+					<br>
+					<br>
 					Consider the following equations:
 					\[f(x) = ax + b \qquad LINEAR \ FUNCTION \ i.e. \ the \ derivative \ of \ a \ quadratic \]
 					\[f(x) = ax^2 + bx + c \qquad CURVE \ FUNCTION \ i.e \ the \ standard \ quadratic \]
