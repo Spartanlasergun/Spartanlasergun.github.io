@@ -269,39 +269,9 @@ body {
 
 /* Animations */
 
-#animation {
-	display: flex;
-	position: absolute;
-	top: 0;
-	margin-left: 50%;
-	width: 100px;
-	height: 100px;
-}
-
-#animation_1 {
-	display: flex;
-	position: absolute;
-	top: 0;
-	margin-left: 50%;
-	width: 100px;
-	height: 100px;
-}
-
 #butterfly {
-	display: flex;
 	position: absolute;
-	top: 0;
-	margin-left: 50%;
-	width: 20px;
-	height: 20px;
-}
-
-#butterfly_1 {
-	display: flex;
-	position: absolute;
-	top: 0;
-	margin-left: 40%;
-	width: 20px;
-	height: 20px;
+	top: 145px;
+	margin-left: 45%;
 }
 
