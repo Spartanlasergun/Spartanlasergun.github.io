@@ -1,4 +1,4 @@
-### Repository for hosting website that teaches math concepts
+### Spartanlasergun's notes
 
 Visit:
 
