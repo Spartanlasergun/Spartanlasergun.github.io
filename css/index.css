@@ -1,0 +1,211 @@
+html {
+	background-image: url("file:///C:/Users/bns36/Documents/website_testing/images/autumn_forest.jpg");
+  	background-position-x: 0;
+  	background-position-y: 0;
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+}
+
+body {
+	margin: 0;
+}
+
+.title {
+	display: flex;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+	background-color: rgba(0, 56, 68, 0.75);
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+
+.title page_name {
+	font-family: "Playfair Display"; 
+	font-size: 32px;
+	line-height: 1;
+	padding-bottom: 20px;
+	color: #fffcf2;
+}
+
+.ring {
+	display: flex;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+	border-radius: 50%;
+	border-width: 15px;
+	border: 5px solid black;
+	border-color: #006c67;
+	width: 300px;
+	height: 300px;
+}
+
+
+.left-center-box {
+	display: flex;
+	position: fixed;
+	width: 100px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 56, 68, 0.75);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	border-color: #006c67;
+	transform: translate(-50%, -50%) translateX(-220px);
+}
+
+.left-center-box:hover {
+	background-color: #003844;
+}
+
+.right-center-box {
+	display: flex;
+	position: fixed;
+	width: 100px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 56, 68, 0.75);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	border-color: #006c67;
+	transform: translate(-50%, -50%) translateX(220px);
+}
+
+.top-left-box {
+	display: flex;
+	position: fixed;
+	width: 100px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 56, 68, 0.75);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	border-color: #006c67;
+	transform: translate(-50%, -50%) translateX(-200px) translateY(-80px);
+}
+
+.top-right-box {
+	display: flex;
+	position: fixed;
+	width: 100px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 56, 68, 0.75);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	border-color: #006c67;
+	transform: translate(-50%, -50%) translateX(200px) translateY(-85px);
+	text-decoration: none;
+}
+
+.bot-left-box {
+	display: flex;
+	position: fixed;
+	width: 100px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 56, 68, 0.75);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	border-color: #006c67;
+	transform: translate(-50%, -50%) translateX(-200px) translateY(80px);
+	text-decoration: none;
+}
+
+.bot-right-box {
+	display: flex;
+	position: fixed;
+	width: 100px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 56, 68, 0.75);
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	border-color: #006c67;
+	transform: translate(-50%, -50%) translateX(200px) translateY(80px);
+	text-decoration: none;
+}
+
+#hyperlink {
+	font-family: "Playfair Display"; 
+	font-size: 16px;
+	line-height: 1;
+}
+
+#hyperlink a {
+	text-decoration: none;
+	color: white;
+}
+
+/* style page footer */
+.footer {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) translateY(250px);
+	justify-content: center;
+	background-color: rgba(0, 56, 68, 0.5);
+}
+
+.footer p {
+	font-size: 0.75em;
+	text-align: center;
+	padding: 0 1em;
+	color: #fffcf2;
+}
+
+.footer p a {
+	text-decoration: none;
+}
+
+
+.external-link {
+	color: #003844;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+/* Animations */
+
+#butterfly {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
