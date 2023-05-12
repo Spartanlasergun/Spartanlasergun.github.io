@@ -27,9 +27,8 @@ body {
 
 .title page_name {
 	font-family: "Playfair Display"; 
-	font-size: 32px;
-	line-height: 1;
-	padding-bottom: 20px;
+	font-size: 27px;
+	line-height: 1.5;
 	color: #fffcf2;
 }
 
