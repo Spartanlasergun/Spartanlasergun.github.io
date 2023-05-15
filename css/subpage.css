@@ -237,3 +237,12 @@ body {
 	height: 0px;
 	margin-top: 20px;
 }
+
+.center_image {
+	flex: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
