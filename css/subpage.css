@@ -231,3 +231,9 @@ body {
 	margin-bottom: 20px;
 }
 
+.separator {
+	flex: 100%;
+	border-top: 3px solid #403d39;
+	height: 0px;
+	margin-top: 20px;
+}
