@@ -365,7 +365,7 @@ body {
 	border-radius: 20px;
 	justify-content: left;
 	align-items: left;
-	text-align: left;
+	text-align: justify;
 	line-height: 1.5;
 	font-family: "Source Sans Pro";
 	color: white;
@@ -380,7 +380,7 @@ body {
 	border-radius: 20px;
 	justify-content: right;
 	align-items: right;
-	text-align: right;
+	text-align: justify;
 	line-height: 1.5;
 	font-family: "Source Sans Pro";
 	color: white;
