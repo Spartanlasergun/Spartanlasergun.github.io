@@ -192,6 +192,19 @@ body {
 	color: white;
 }
 
+#disabled-link {
+	font-family: "Playfair Display"; 
+	font-size: 14px;
+	line-height: 1;
+}
+
+#disabled-link a {
+	text-decoration: none;
+	color: white;
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
 /* style page footer */
 .footer {
 	display: flex;
