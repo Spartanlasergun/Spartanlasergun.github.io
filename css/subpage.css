@@ -148,6 +148,16 @@ body {
 	background-color: #564D41;
 }
 
+.disabled-link {
+	border-bottom: 2px solid #403d39;
+}
+
+.disabled-link a {
+	pointer-events: none;
+	cursor: not-allowed;
+	color: grey;
+}
+
 .topic-link {
 	text-decoration: none;
 	text-align: left;
