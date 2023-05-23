@@ -6,6 +6,10 @@
 		<meta name="description" content="Spartanlasergun's Notes">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Spartanlasergun's Notes</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    	<script id="MathJax-script" async
+    	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    	</script>
 		<link rel="icon" href="images/icon.png" type="image/x-icon">
 		<link rel="stylesheet" href="../../css/subpage.css">
 		<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
@@ -65,7 +69,7 @@
 
 				<div class="sub_box">
 					<div class="section_heading">
-						Range						
+						Range & Interquartile Range						
 					</div>					
 				</div>
 
@@ -73,25 +77,13 @@
 					<div class="slide_text">
 						Range: The range is the simplest measure of spread, representing the difference between the largest and smallest values in a dataset. It provides an overall sense of the spread but can be sensitive to outliers.
 					</div>
-					<div class="slide_img_left">
-						<img src="../../images/placeholder.jpg" alt="placeholder">
-					</div>
 				</div>
-
-				<div class="separator"></div>
-
-				<div class="sub_box">
-					<div class="section_heading">
-						Interquartile Range						
-					</div>					
+				<div class="center_image">
+					<img src="../../images/intq_range.png" alt="intq_range">
 				</div>
-
 				<div class="slide_box">
 					<div class="slide_text">
 						Interquartile Range (IQR): The IQR represents the range between the first quartile (25th percentile) and the third quartile (75th percentile) of a dataset. It is robust to outliers and provides insights into the middle 50% of the data, making it useful for describing skewed distributions.
-					</div>
-					<div class="slide_img_left">
-						<img src="../../images/placeholder.jpg" alt="placeholder">
 					</div>
 				</div>
 
@@ -105,11 +97,14 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						Mean Absolute Deviation (MAD): The MAD measures the average absolute difference between each data point and the mean. It offers an alternative to the standard deviation and is robust against outliers.
+						Mean Absolute Deviation (MAD): The MAD measures the average absolute difference between each data point and the mean. The mean absolute deviation is a precise calculation whereas the standard deviation accounts for potential errors. This difference is critical to understanding why the MAD is used much less frequently in real life situations compared to the standard deviation. (This will be discussed further when we talk about the standard deviation.) The MAD is given by the equation:
+						\[mean \ absolute \ deviation = \frac{\displaystyle\sum_{n=1}^i (\bar x - x_n)}{\bar x}\]
+						The image below illustrates how this is done.
 					</div>
-					<div class="slide_img_left">
-						<img src="../../images/placeholder.jpg" alt="placeholder">
-					</div>
+				</div>
+
+				<div class="center_image">
+					<img src="../../images/mean_absolute_deviation.jpg" alt="MAD">
 				</div>
 
 				<div class="separator"></div>
