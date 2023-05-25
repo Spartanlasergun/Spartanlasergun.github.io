@@ -97,8 +97,8 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						Mean Absolute Deviation (MAD): The MAD measures the average absolute difference between each data point and the mean. The mean absolute deviation is a precise calculation whereas the standard deviation accounts for potential errors. This difference is critical to understanding why the MAD is used much less frequently in real life situations compared to the standard deviation. (This will be discussed further when we talk about the standard deviation.) The MAD is given by the equation:
-						\[mean \ absolute \ deviation = \frac{\displaystyle\sum_{n=1}^i (\bar x - x_n)}{\bar x}\]
+						The Mean Absolute Deviation (MAD), measures the average absolute difference between each data point and the mean. The mean absolute deviation is a precise calculation whereas the standard deviation accounts for potential errors. This difference is critical to understanding why the MAD is used much less frequently in real life situations compared to the standard deviation. (This will be discussed further when we talk about the standard deviation.) The MAD is given by the equation:
+						\[mean \ absolute \ deviation = \frac{\displaystyle\sum_{n=1}^i (\bar x - x_n)}{n}\]
 						The image below illustrates how this is done.
 					</div>
 				</div>
@@ -117,10 +117,42 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						Standard Deviation: The standard deviation is the square root of the variance. It is widely used due to its intuitive interpretation and measures the average amount by which data points deviate from the mean. It provides a more meaningful understanding of the spread, especially when the data follows a normal distribution.
-					</div>
-					<div class="slide_img_left">
-						<img src="../../images/placeholder.jpg" alt="placeholder">
+						The standard deviation is a widely measurement for the average amount by which data points deviate from the mean in any given dataset. It is given by the following equation:
+
+						\[\sigma = \sqrt{\frac{\displaystyle\sum_{i=1}^n (x_i - \mu)^2}{N}}\]
+
+						<br>
+						Immediately, you'll notice that parts of this equation is not so different from the one that gives us the Mean Absolute Deviation. The numerator for both equations gives the sum of the differences for each value from the mean, which is then divided by the total number of datapoints to find the average deviation. However, the standard deviation has this term squared, while the MAD just uses the raw values.
+						<br>
+						<br>
+						Observe: 
+						<br>
+						MAD --> \(\frac{\displaystyle\sum_{i=1}^n (x_i - \bar x)}{N}\)
+						<br>
+						Standard Deviation --> \(\frac{\displaystyle\sum_{i=1}^n (x_i - \mu)^2}{N}\)
+						<br>
+						<br>
+						Notice that all we've really done is squared the numerator of the Mean Absolute Deviation. Following this, we take the square root of the entire term in order to normalize the values in accordance with the original dataset. i.e. 
+
+						\[\sqrt{\frac{\displaystyle\sum_{i=1}^n (x_i - \mu)^2}{N}}\]
+
+						The key intuition behind this, is that in squaring the sum of the differences from the mean, we give much more weight to values that deviate further from the mean than the others. When compared with the values produced by the Mean Absolute Deviation, you'll notice that the standard deviation actually produces a slight error because of this - hence the reason why it is also known as 'the standard error of the mean'. 
+						<br>
+						<br>
+						If you've understood what I've just written, then you may also be wondering: 
+						<br>
+						<br>
+						"Why do we use the Standard Deviation rather than the Mean Absolute Deviation which is a much more precise a value?" 
+						<br>
+						<br>
+						I have consulted with many different resources to answer this question, and I would note on this point that different sources, give different explanations. One of these explanations is purerly intuitve, while the others are based in a higher level of mathematics. For this reason I will begin with the intuitive reasoning and we'll see how far we can get with the others.
+						<br>
+						<br>
+						1) Intuitive reasoning
+						<br>
+						2) The squared term perfectly describes the spread of a gaussian probabilty distributuion. This somehow makes it the best metric to describe the spread of a normal distribution.
+						<br>
+						3) The square is continuously differentiable, while the absolute is a discontinuity. This is important in optimization problems in data science.
 					</div>
 				</div>
 
