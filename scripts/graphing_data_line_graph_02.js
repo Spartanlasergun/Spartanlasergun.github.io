@@ -9,7 +9,7 @@ const data_one = {
     data: [65000, 59000, 80000, 81000, 56000],
     fill: false,
     borderColor: 'rgb(75, 192, 192)',
-    tension: 0.1
+    tension: 0.8
   }]
 };
 
