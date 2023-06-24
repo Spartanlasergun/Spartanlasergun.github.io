@@ -14,6 +14,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 		<script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script defer src="../../scripts/graphing_data_bar_chart_02.js"></script>
+		<script defer src="../../scripts/graphing_data_line_graph_02.js"></script>
 	</head>
 
 	<body>
@@ -85,7 +86,9 @@
 
 				<div class="slide_box">
 					<div class="slide_img_right">
-						<img src="../../images/continuous_data.png" alt="Continuous Data">
+						<div>
+							<canvas id="profits" width=150px height=150px></canvas>
+						</div>
 					</div>
 					<div class="slide_text">
 						Continuous data, on the other hand, is data that can take on any value within a specific range or interval. It is measured on a continuous scale and can be divided into infinitely small intervals. Continuous data is characterized by a smooth and uninterrupted flow of values. Examples of continuous data include measurements such as height, weight, time, temperature, and distance. Continuous data is often represented using line graphs, scatter plots, or frequency curves.
