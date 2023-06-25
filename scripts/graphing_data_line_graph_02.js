@@ -23,10 +23,10 @@ new Chart(line_one, {
 /*------------------------------------------------------------------*/
 
 const data_two = {
-  labels: ["0*", "10*", "20*", "30*", "40*"],
+  labels: ["0", "25", "50", "75", "100"],
   datasets: [{
     label: '(Cum Freq) Temperature vs Time',
-    data: [50, 75, 80, 100, 150],
+    data: [10, 20, 60, 80, 120],
     fill: false,
     borderColor: 'rgb(75, 192, 192)',
     tension: 0.3
