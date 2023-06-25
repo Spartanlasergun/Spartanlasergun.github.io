@@ -61,6 +61,11 @@ const Chart_02 = new Chart(ice, {
 type: 'bar',
 data: bars_two,
 options: {
+	plugins: {
+		legend: {
+			display: false
+		}
+	},
 	scales: {
 		y: {
 			beginAtZero: true
