@@ -1,5 +1,6 @@
 const ctx = document.getElementById('hairColor');
 const ice = document.getElementById('iceCream');
+const pres = document.getElementById('president');
 
 const bars_one = {
 	labels: ['blonde', 'brunette', 'black', "red", "auburn"],
@@ -30,6 +31,19 @@ const bars_two = {
 	]
 };
 
+const bars_three = {
+	labels: ['strongly disagree', 'disagree', 'neutral', 'agree', 'strongly agree'],
+	datasets: [
+		{
+			label: "Was Donald Trump a good President?",
+			data: [25, 11, 12, 4, 1],
+			borderColor: '#36A2EB',
+			backgroundColor: [
+				'#C7C163'
+			]
+		},
+	]
+};
 
 const Chart_01 = new Chart(ctx, {
 type: 'bar',
@@ -46,6 +60,18 @@ options: {
 const Chart_02 = new Chart(ice, {
 type: 'bar',
 data: bars_two,
+options: {
+	scales: {
+		y: {
+			beginAtZero: true
+		}
+	}
+}
+});
+
+const Chart_03 = new Chart(pres, {
+type: 'bar',
+data: bars_three,
 options: {
 	scales: {
 		y: {
