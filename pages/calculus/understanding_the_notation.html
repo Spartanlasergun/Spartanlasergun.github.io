@@ -6,6 +6,10 @@
 		<meta name="description" content="Spartanlasergun's Notes">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Spartanlasergun's Notes</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    	<script id="MathJax-script" async
+    	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    	</script>
 		<link rel="icon" href="images/icon.png" type="image/x-icon">
 		<link rel="stylesheet" href="../../css/subpage.css">
 		<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
@@ -42,20 +46,48 @@
 				<div class="separator"></div>
 
 				<div class="plain_text">
-					Most of us take for granted that calculus has a very unique notation when compared to other branches of mathematics. Ignoring the fancy symbols usually allows us to understand the basic arithmetic involved in solving simple calculus problems, but an intuitive understanding of how we arrive at these symbols is important if you wish to take calculus into the real world with you later on. So this section is dedicated to a step by step explanation that will explore the fundamental thinking that has shaped the modern notation as we understand it. 
+					Most of us take for granted that calculus has a very unique notation when compared to other branches of mathematics. Ignoring the fancy symbols usually allows us to understand the basic arithmetic involved in solving simple calculus problems, but an intuitive understanding of how we arrive at these symbols is important if you wish to take calculus into the real world. So this section is dedicated to a step by step explanation that will explore the fundamental thinking that has shaped the modern notation as we understand it. 
 				</div>
 
 				<div class="separator"></div>
 
 				<div class="sub_box">
 					<div class="section_heading">
-						Dependent and Independent Variables
+						Expression of Functions
 					</div>
 				</div>
 
 				<div class="slide_box">
 					<div class="plain_text">
 						We will begin with a look at Dependent and Independent Variables in mathematics.
+						Consider the formula for the volume of a sphere:
+						\[V = \frac{4}{3} \pi r^3 \]
+						In this formula, the independent variable is \(r\). This is because \(r\) not dependent on any other varible to determine its value. Conversely, \(V\) is the dependent variable. We can say, that the variation of \(V\), is dependent upon variation of \(r\).
+						<br>
+						<br>
+						This seems intuitive when we consider common mathematical formulae, but what about something a bit more complex like a quadratic equation?
+						\[y = ax^2 + bx + c\]
+						Well, the reasoning does not change. In the above equation, \(x\) is the independent variable as it is not reliant on any other variable to determine its value. Accordingly, \(y\) is dependent, as any variation in \(y\) is dependent on variation in \(x\).
+						<br>
+						<br>
+						Why is this understanding of dependent and independent variables important? Well for all intent an purposes, the dependent variable is can be considered a function that is described by the independent variables. This is usually expressed as follows:
+						\[f(x) = ax^2 + bx + c\]
+						\(y\) becomes \(f(x)\). 
+						<br>
+						Changes in this function can be expressed as:
+						\[f(2) = (2)x^2 + (2)x + c\]
+						\[f(3) = (3)x^2 + (3)x + c\]
+						\[f(10) = (10)x^2 + (10)x + c\]
+						If we were dealing with some other independent variable - perhaps those found in trigonometric functions, we would write:
+						\[f(\theta) = sin\theta^2 - cos\theta^2\]
+					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="section_heading">
+						Rates of Change
 					</div>
 				</div>
 
