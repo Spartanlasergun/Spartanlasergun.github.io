@@ -6,6 +6,10 @@
 		<meta name="description" content="Spartanlasergun's Notes">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Spartanlasergun's Notes</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    	<script id="MathJax-script" async
+    	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    	</script>
 		<link rel="icon" href="images/icon.png" type="image/x-icon">
 		<link rel="stylesheet" href="../../css/subpage.css">
 		<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
@@ -58,9 +62,20 @@
 
 				<div class="separator"></div>
 
+				<div class="sub_box">
+					<div class="section_heading">
+						Expressing Constants & Variables
+					</div>
+				</div>
+
 				<div class="slide_box">
 					<div class="slide_text">
-						
+						Consider the following function:
+						\[f(x) = 3x^2 + 5x - 1\]
+						If I were to ask you to find and expression for the function \(f(x - \delta x)\), you would probably understand that there are many such ways to express this function. However, I want to consider one idea that might be a notch higher than the others. Observe:
+						\[f(x - \delta x) = 3(x - \delta x)^2 + 5(x - \delta x) - 1\]
+						\[f(x - \delta x) = 3(x - \delta x)(x - \delta x) + 5(x - \delta x) - 1\]
+						\[f(x - \delta x) = 3(x^2 - 2x\delta x + \delta x^2) + 5(x - \delta x) - 1\]
 					</div>
 				</div>
 
