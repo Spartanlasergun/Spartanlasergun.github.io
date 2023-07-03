@@ -397,3 +397,27 @@ body {
 	color: white;
 	padding: 5px;
 }
+
+.disclaimer_heading {
+	display: flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 20px;
+	padding-left: 10px;
+	border: 2px solid white;
+	border-bottom: none;
+}
+
+.disclaimer_body {
+	display: flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 50px;
+	border: 2px solid white;
+}
+
+.external-link {
+	color: #eb5e28;
+	font-weight: bold;
+	text-decoration: none;
+}
