@@ -14,9 +14,14 @@ let end_x = 500;
 let end_y = 500;
 let progress = 0;
 
+// load images
+img_one = new Image();
+img_one.src = "images/abstract_idea.png";
+
 function fissure() {
      // Clear the canvas
      ctx.clearRect(0, 0, canvas.width, canvas.height);
+     ctx.drawImage(img_one, 0, 0);
 
      // Calculate the current position based on the progress
      let currentPos_x = start_x + (end_x - start_x) * progress;
