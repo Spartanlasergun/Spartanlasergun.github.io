@@ -10,7 +10,7 @@ canvas.height = window.innerHeight;
 
 let start_x = 50;
 let start_y = 50;
-let end_x = 500
+let end_x = 500;
 let end_y = 500;
 let progress = 0;
 
