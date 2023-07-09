@@ -27,7 +27,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;	
-	background-color: rgba(0, 56, 68, 0.75);
+	background-color: rgba(0, 56, 68, 0.60);
 	border-radius: 50%;
 	width: 250px;
 	height: 250px;
@@ -39,24 +39,6 @@ body {
 	line-height: 1.5;
 	color: #fffcf2;
 }
-
-.ring {
-	display: flex;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	justify-content: center;
-	align-items: center;
-	text-align: center;	
-	border-radius: 50%;
-	border-width: 15px;
-	border: 5px solid black;
-	border-color: #006c67;
-	width: 300px;
-	height: 300px;
-}
-
 
 .left-center-shelf {
 	display: flex;
@@ -75,25 +57,21 @@ body {
 	background-color: rgba(0, 56, 68, 0.75);
 }
 
-.right-center-box {
+.right-center-shelf {
 	display: flex;
 	position: fixed;
-	width: 100px;
-	height: 50px;
+	width: 150px;
+	height: 75px;
 	top: 50%;
 	left: 50%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: rgba(0, 56, 68, 0.75);
-	border-top: 5px solid black;
-	border-bottom: 5px solid black;
-	border-color: #006c67;
-	transform: translate(-50%, -50%) translateX(220px);
+	transform: translate(-50%, -50%) translateX(250px);
 }
 
-.right-center-box:hover {
-	background-color: #003844;
+.right-center-shelf:hover {
+	background-color: rgba(0, 56, 68, 0.75);
 }
 
 .top-left-shelf {
@@ -113,26 +91,22 @@ body {
 	background-color: rgba(0, 56, 68, 0.75);
 }
 
-.top-right-box {
+.top-right-shelf {
 	display: flex;
 	position: fixed;
-	width: 100px;
-	height: 50px;
+	width: 150px;
+	height: 75px;
 	top: 50%;
 	left: 50%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: rgba(0, 56, 68, 0.75);
-	border-top: 5px solid black;
-	border-bottom: 5px solid black;
-	border-color: #006c67;
-	transform: translate(-50%, -50%) translateX(200px) translateY(-85px);
+	transform: translate(-50%, -50%) translateX(240px) translateY(-80px);
 	text-decoration: none;
 }
 
-.top-right-box:hover {
-	background-color: #003844;
+.top-right-shelf:hover {
+	background-color: rgba(0, 56, 68, 0.75);
 }
 
 .bot-left-shelf {
@@ -153,26 +127,22 @@ body {
 	background-color: rgba(0, 56, 68, 0.75);
 }
 
-.bot-right-box {
+.bot-right-shelf {
 	display: flex;
 	position: fixed;
-	width: 100px;
-	height: 50px;
+	width: 150px;
+	height: 75px;
 	top: 50%;
 	left: 50%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: rgba(0, 56, 68, 0.75);
-	border-top: 5px solid black;
-	border-bottom: 5px solid black;
-	border-color: #006c67;
-	transform: translate(-50%, -50%) translateX(200px) translateY(80px);
+	transform: translate(-50%, -50%) translateX(240px) translateY(80px);
 	text-decoration: none;
 }
 
-.bot-right-box:hover {
-	background-color: #003844;
+.bot-right-shelf:hover {
+	background-color: rgba(0, 56, 68, 0.75);
 }
 
 .top-shelf {
@@ -210,39 +180,22 @@ body {
 	background-color: rgba(0, 56, 68, 0.75);
 }
 
-.top-right-corner-box {
+.top-right-corner-shelf {
 	display: flex;
 	position: fixed;
-	width: 100px;
-	height: 50px;
+	width: 150px;
+	height: 75px;
 	top: 50%;
 	left: 50%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	transform: translate(-50%, -50%) translateX(180px) translateY(-160px);
+	text-decoration: none;
+}
+
+.top-right-corner-shelf:hover {
 	background-color: rgba(0, 56, 68, 0.75);
-	border-top: 5px solid black;
-	border-bottom: 5px solid black;
-	border-color: #006c67;
-	transform: translate(-50%, -50%) translateX(140px) translateY(-160px);
-	text-decoration: none;
-}
-
-.top-right-corner-box:hover {
-	background-color: #003844;
-}
-
-#disabled-link {
-	font-family: "Playfair Display"; 
-	font-size: 14px;
-	line-height: 1;
-}
-
-#disabled-link a {
-	text-decoration: none;
-	color: white;
-	pointer-events: none;
-	cursor: not-allowed;
 }
 
 /* style page footer */
