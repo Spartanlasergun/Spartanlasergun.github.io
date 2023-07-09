@@ -1,5 +1,5 @@
 //start-------------------------Boilerplate Fullscreen Canvas----------------------------------
-
+/*
 // Get the canvas element
 const canvas = document.getElementById('canvas');
 
@@ -12,18 +12,11 @@ const ctx = canvas.getContext('2d');
 
 //end-------------------------Boilerplate Fullscreen Canvas-----------------------------------
 
+/*
 // load image
 img_one = new Image();
 img_one.src = "autumn_leaf.png";
-img_one.onload = function () {
-    ctx.drawImage(img_one, 0, 0);
-}
-
-let x = 0;
-let y = 0;
-let a = canvas.height;
-let b = canvas.width;
-let progress = 0;
+img_one.onload = fall
 
 function fall() {
      // Clear the canvas
@@ -44,5 +37,4 @@ function fall() {
           requestAnimationFrame(fall);
      }
 }
-
-fall();
+*/
