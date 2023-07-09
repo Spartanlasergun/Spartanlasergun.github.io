@@ -58,25 +58,21 @@ body {
 }
 
 
-.left-center-box {
+.left-center-shelf {
 	display: flex;
 	position: fixed;
-	width: 100px;
-	height: 50px;
+	width: 150px;
+	height: 75px;
 	top: 50%;
 	left: 50%;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: rgba(0, 56, 68, 0.75);
-	border-top: 5px solid black;
-	border-bottom: 5px solid black;
-	border-color: #006c67;
-	transform: translate(-50%, -50%) translateX(-220px);
+	transform: translate(-50%, -50%) translateX(-230px);
 }
 
-.left-center-box:hover {
-	background-color: #003844;
+.left-center-shelf:hover {
+	background-color: rgba(0, 56, 68, 0.75);
 }
 
 .right-center-box {
