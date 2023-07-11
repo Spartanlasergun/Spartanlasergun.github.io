@@ -465,8 +465,11 @@ body {
 	padding: 10px;
 	color: white;
 	font-family: "Source Sans Pro";
-	font-size: 15px;
+	font-size: 17px;
+	font-style: italic;
 	line-height: 200%;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	border: 2px solid #eb5e28;
 	border-top: none;
