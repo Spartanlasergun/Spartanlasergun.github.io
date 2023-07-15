@@ -461,6 +461,7 @@ body {
 }
 
 .content_one {
+	display: flex;
 	flex: 30%;
 	padding: 10px;
 	color: white;
@@ -486,4 +487,11 @@ body {
 	border: 2px solid #eb5e28;
 	border-left: none;
 	border-top: none;
+}
+
+.content_center {
+	flex: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
