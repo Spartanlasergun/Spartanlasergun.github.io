@@ -32,7 +32,7 @@
 				</div>
 				
 				<div class="selected_box">
-					<p><a href="https://spartanlasergun.github.io/pages/calculus/understanding_the_notation.html" class="topic-link">Functions and Limits</a></p>
+					<p><a href="https://spartanlasergun.github.io/pages/calculus/functions_and_limits.html" class="topic-link">Functions and Limits</a></p>
 				</div>
 				
 			</div>
@@ -40,13 +40,13 @@
 			<div class="page_info">
 
 				<div class="section_box">
-					<first class="section_heading">The Notation And Symbols Used In Calculus</first>
+					<first class="section_heading">Function and Limits</first>
 				</div>
 
 				<div class="separator"></div>
 
 				<div class="plain_text">
-					Most of us take for granted that calculus has a very unique notation when compared to other branches of mathematics. Ignoring the fancy symbols usually allows us to understand the basic arithmetic involved in solving simple calculus problems, but an intuitive understanding of how we arrive at these symbols is important if you wish to take calculus into the real world. So this section is dedicated to a step by step explanation that will explore the fundamental thinking that has shaped the modern notation as we understand it. 
+					This section outlines the key concepts in functions and limits that shape the notation of calculus along with the theoretical foundation for infinitesimals that is found in limits.
 				</div>
 
 				<div class="separator"></div>
@@ -94,7 +94,7 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						In mathematics, if we take any variable \(x\), the symbol \(\delta x\) is used to denote change in that variable. The letter \(\delta\), is the greek symbol delta. Much like \(f(x)\), it is not its own variable and should not be separated from the variable \(x\). When we talk about \(\delta x\) or \(\delta y\), we are refering to 'changes' (i.e. increases or decreases) rather than an independent value, and so these changes are functions themselves. The fact that we are mathematically referring to the idea of 'change' is part of the key intuition behind the real world application of calculus. We will dive deeper into this in later sections.
+						In mathematics, if we take any variable \(x\), the symbol \(\delta x\) is used to denote change in that variable. The letter \(\delta\), is the greek symbol delta. Much like \(f(x)\), it is not its own variable and should not be separated from the variable \(x\). When we talk about \(\delta x\) or \(\delta y\), we are refering to 'changes' (i.e. increases or decreases) rather than an independent value, and so these changes are functions themselves. The fact that we are mathematically referring to the idea of 'change' is part of the key intuition behind the real world application of calculus.
 						<br>
 						<br>
 						For now, lets consider two random variables, \(x\) and \(y\). If the variable \(x\) is then increased by and amount \(\delta x\), then the variable \(y\) will also change by an amount denoted by \(\delta y\).
@@ -103,6 +103,7 @@
 						\[y + \delta y = f(x + \delta x)\]
 						And now this may look a bit interesting:
 						\[\delta y = f(x + \delta x) - f(x)\]
+						It's important to understand the above function and how it has been manipulated, because it highlights one of the more important points in calculus that people unfamiliar with the subject find confusing. That is, that \(\delta x\) and \(\delta y\) are not two separate variables, but a single variable that represents 'change', and that in many cases this change is highly theoretical as it may symbolize change on a level that cannot be otherwise represented mathematically. This latter point may become clearer as we discuss the concept of infinity and limits in the next section.
 					</div>
 				</div>
 
@@ -161,7 +162,7 @@
 						\[f(1.99) = \frac{x^2 - 4}{x - 2} =  3.99\]
 						By examining these results it is easy to see that as \(x\) approaches \(2\), the function \(\frac{x^2 - 4}{x - 2}\) approaches a value of \(4\). Hence:
 						\[as \ \ \ \ \ x \to 2 \ , \ \frac{x^2 - 4}{x - 2} \to 4 \]
-						Let us consider a problem that is a bit more theoretical. Consider the function:
+						Let us look at a problem that is a bit more theoretical. Consider the function:
 						\[f(x) = \frac{x^2 - a^2}{x - a} \]
 						We will note, that as \(x\) approaches \(a\) in value, we get closer to a limit of the form \(\frac{0}{0}\). Let us then express this theoretical approach to \(a\) as \(a + h\). And hence, let:
 						\[x = a + h\]
@@ -192,7 +193,19 @@
 						\[\lim{(uv)} = \lim{(u)} * \lim{(v)} \]
 						4) The limit of the quotient of two functions is equal to the quotient of the limit of the separate functions, provided that the limit of the divisor is non-zero.  Hence, if \(u\) and \(v\) are functions of \(x\), then:
 						\[\lim{(\frac{u}{v})} = \frac{\lim{(u)}}{\lim{(v)}} \ \ , \ provided \ \ \lim{(v)} \neq 0 \]
-
+						<br>
+						<div class="separator"></div>
+						An example of how this is applied is given below.<br>
+						Question: Find the limit of the following function as \(x\) becomes infinite:
+						\[f(x) = \frac{x^2 + 3x}{2x^2 - 5}\]
+						Solving:
+						\[\frac{x^2 + 3x}{2x^2 - 5} = \frac{1 + \frac{3}{x}}{2 - \frac{5}{x^2}} \]
+						Applying Theorem 4:
+						\[ = \frac{1 + \lim_{x \to \infty}\frac{3}{x}}{2 - \lim_{x \to \infty}\frac{5}{x^2}} \]
+						\[ = \frac{1 + 0}{2 - 0}\]
+						\[ = \frac{1}{2}\]
+						Hence:
+						\[\lim_{x \to \infty}\frac{x^2 + 3x}{2x^2 - 5} = \frac{1}{2}\]
 					</div>
 				</div>
 
