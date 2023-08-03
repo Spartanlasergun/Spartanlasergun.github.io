@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Narendra B. Singh">
+		<meta name="description" content="Spartanlasergun's Notes">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Spartanlasergun's Notes</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    	<script id="MathJax-script" async
+    	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    	</script>
+		<link rel="icon" href="images/icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="../../css/subpage.css">
+		<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Georgia' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	</head>
+	<body>
+		<div class="main">
+			<div class="sidebar">
+				<div class="HOME">
+					<svg width="20" height="20" id="butterfly">
+						<image x="0" y="0" width="20" height="20" xlink:href="../../images/blue_butterfly.gif">
+					</svg>
+					<a href="https://spartanlasergun.github.io/index.html" class="topic-link">Home</a>
+				</div>
+
+				<div class="link_box">
+					<p><a href="https://spartanlasergun.github.io/pages/calculus/calculus.html" class="topic-link">Origins of Calculus</a></p>
+				</div>
+				
+				<div class="selected_box">
+					<p><a href="https://spartanlasergun.github.io/pages/calculus/a_conceptualization_of_functions.html" class="topic-link">A Conceptualization of Functions</a></p>
+				</div>
+
+				<div class="link_box">
+					<p><a href="https://spartanlasergun.github.io/pages/calculus/limits.html" class="topic-link">Limits</a></p>
+				</div>
+
+				<div class="disabled-link">
+					<p><a href="https://spartanlasergun.github.io/pages/calculus/rates_of_change_-_gradients.html" class="topic-link">Rates of Change - Gradients</a></p>
+				</div>
+				
+			</div>
+
+			<div class="page_info">
+
+				<div class="section_box">
+					<first class="section_heading">A Conceptualization of Functions</first>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="plain_text">
+					There is some difficulty in presenting the foundational concepts that are relevant to calculus; namely, Functions and Limits. This is because they both require individual exploration (at the neglect of each other) before both concepts can be married together in an exploration of calculus. This section explores the conceptualization of functions and introduces some basic ideas in relation to the notation that is of specific relevance to calculus. The purpose in large part is to familiarize the reader with use of terms such as \(f(x)\), \(\delta x\) and \(\delta y\).
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="sub_heading">
+						Expression of Functions
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="plain_text">
+						We will begin with a look at Dependent and Independent Variables in mathematics.
+						Consider the formula for the volume of a sphere:
+						\[V = \frac{4}{3} \pi r^3 \]
+						In this formula, the independent variable is \(r\). This is because \(r\) is not dependent on any other varible to determine its value. Conversely, \(V\) is the dependent variable. We can say, that the variation of \(V\), is dependent upon variation of \(r\).
+						<br>
+						<br>
+						This seems intuitive when we consider common mathematical formulae, but what about something a bit more complex like a quadratic equation?
+						\[y = ax^2 + bx + c\]
+						Well, the reasoning does not change. In the above equation, \(x\) is the independent variable as it is not reliant on any other variable to determine its value. Accordingly, \(y\) is dependent, as any variation in \(y\) is dependent on variation in \(x\).
+						<br>
+						<br>
+						Why is this understanding of dependent and independent variables important? Well for all intent an purposes, the dependent variable is can be considered a function that is described by the independent variables. This is usually expressed as follows:
+						\[f(x) = ax^2 + bx + c\]
+						\(y\) becomes \(f(x)\). 
+						<br>
+						Changes in this function can be expressed as:
+						\[f(2) = a(2)^2 + b(2) + c\]
+						\[f(3) = a(3)^2 + b(3) + c\]
+						\[f(10) = a(10)^2 + b(10) + c\]
+						If we were dealing with some other independent variable - perhaps those found in trigonometric functions, we would write:
+						\[f(\theta) = sin\theta^2 - cos\theta^2\]
+						This idea of a function is brought about by the idea of change - particularly, the idea that changes one side of an equation results in changes on the other side. So, what happens when change itself becomes the variable that we are concerned with?
+					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="sub_heading">
+						Rates of Change
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						In mathematics, if we take any variable \(x\), the symbol \(\delta x\) is used to denote change in that variable. The letter \(\delta\), is the greek symbol delta. Much like \(f(x)\), it is not its own variable and should not be separated from the variable \(x\). When we talk about \(\delta x\) or \(\delta y\), we are refering to 'changes' (i.e. increases or decreases) rather than an independent value, and so these changes are functions themselves. The fact that we are mathematically referring to the idea of 'change' is part of the key intuition behind the real world application of calculus.
+						<br>
+						<br>
+						For now, lets consider two random variables, \(x\) and \(y\). If the variable \(x\) is then increased by and amount \(\delta x\), then the variable \(y\) will also change by an amount denoted by \(\delta y\).
+						Accordingly:
+						\[y = f(x)\]
+						\[y + \delta y = f(x + \delta x)\]
+						And now this may look a bit interesting:
+						\[\delta y = f(x + \delta x) - f(x)\]
+						It's important to understand how the above function has been manipulated, because it highlights one of the more important points in calculus that people unfamiliar with the subject find confusing; namely, that \(\delta x\) and \(\delta y\), are  variables that represents 'change', and in many cases this change is highly theoretical as it may symbolize change on a level that cannot be otherwise represented mathematically. It is necessary to make mention of this now, because the algebraic manipulation of \(\delta x\) and \(\delta y\) have a very theoretical basis is the conception of the differential coefficient that will be explored later on.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

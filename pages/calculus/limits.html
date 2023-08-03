@@ -31,8 +31,12 @@
 					<p><a href="https://spartanlasergun.github.io/pages/calculus/calculus.html" class="topic-link">Origins of Calculus</a></p>
 				</div>
 				
+				<div class="link_box">
+					<p><a href="https://spartanlasergun.github.io/pages/calculus/a_conceptualization_of_functions.html" class="topic-link">A Conceptualization of Functions</a></p>
+				</div>
+
 				<div class="selected_box">
-					<p><a href="https://spartanlasergun.github.io/pages/calculus/functions_and_limits.html" class="topic-link">Functions and Limits</a></p>
+					<p><a href="https://spartanlasergun.github.io/pages/calculus/limits.html" class="topic-link">Limits</a></p>
 				</div>
 
 				<div class="disabled-link">
@@ -44,78 +48,20 @@
 			<div class="page_info">
 
 				<div class="section_box">
-					<first class="section_heading">Function and Limits</first>
+					<first class="section_heading">Limits</first>
 				</div>
 
 				<div class="separator"></div>
 
 				<div class="plain_text">
-					This section outlines the key concepts in functions and limits that shape the notation of calculus along with the theoretical foundation for infinitesimals that is found in limits.
+					Limits as a mathematical concept is extremely theoretical. This combined with the need for algebraic manipulation of the theoretical constructs that it presents can be very difficult to grasp. Thus it is vital that it be presented with the utmost care and clarity, which is what I have endevaoured to do in this section.
 				</div>
 
 				<div class="separator"></div>
 
 				<div class="sub_box">
 					<div class="sub_heading">
-						Expression of Functions
-					</div>
-				</div>
-
-				<div class="slide_box">
-					<div class="plain_text">
-						We will begin with a look at Dependent and Independent Variables in mathematics.
-						Consider the formula for the volume of a sphere:
-						\[V = \frac{4}{3} \pi r^3 \]
-						In this formula, the independent variable is \(r\). This is because \(r\) is not dependent on any other varible to determine its value. Conversely, \(V\) is the dependent variable. We can say, that the variation of \(V\), is dependent upon variation of \(r\).
-						<br>
-						<br>
-						This seems intuitive when we consider common mathematical formulae, but what about something a bit more complex like a quadratic equation?
-						\[y = ax^2 + bx + c\]
-						Well, the reasoning does not change. In the above equation, \(x\) is the independent variable as it is not reliant on any other variable to determine its value. Accordingly, \(y\) is dependent, as any variation in \(y\) is dependent on variation in \(x\).
-						<br>
-						<br>
-						Why is this understanding of dependent and independent variables important? Well for all intent an purposes, the dependent variable is can be considered a function that is described by the independent variables. This is usually expressed as follows:
-						\[f(x) = ax^2 + bx + c\]
-						\(y\) becomes \(f(x)\). 
-						<br>
-						Changes in this function can be expressed as:
-						\[f(2) = (2)x^2 + (2)x + c\]
-						\[f(3) = (3)x^2 + (3)x + c\]
-						\[f(10) = (10)x^2 + (10)x + c\]
-						If we were dealing with some other independent variable - perhaps those found in trigonometric functions, we would write:
-						\[f(\theta) = sin\theta^2 - cos\theta^2\]
-						This idea of a function is brought about by the idea of change - particularly, the idea that changes one side of an equation results in changes on the other side. So, what happens when change itself becomes the variable that we are concerned with?
-					</div>
-				</div>
-
-				<div class="separator"></div>
-
-				<div class="sub_box">
-					<div class="sub_heading">
-						Rates of Change
-					</div>
-				</div>
-
-				<div class="slide_box">
-					<div class="slide_text">
-						In mathematics, if we take any variable \(x\), the symbol \(\delta x\) is used to denote change in that variable. The letter \(\delta\), is the greek symbol delta. Much like \(f(x)\), it is not its own variable and should not be separated from the variable \(x\). When we talk about \(\delta x\) or \(\delta y\), we are refering to 'changes' (i.e. increases or decreases) rather than an independent value, and so these changes are functions themselves. The fact that we are mathematically referring to the idea of 'change' is part of the key intuition behind the real world application of calculus.
-						<br>
-						<br>
-						For now, lets consider two random variables, \(x\) and \(y\). If the variable \(x\) is then increased by and amount \(\delta x\), then the variable \(y\) will also change by an amount denoted by \(\delta y\).
-						Accordingly:
-						\[y = f(x)\]
-						\[y + \delta y = f(x + \delta x)\]
-						And now this may look a bit interesting:
-						\[\delta y = f(x + \delta x) - f(x)\]
-						It's important to understand the above function and how it has been manipulated, because it highlights one of the more important points in calculus that people unfamiliar with the subject find confusing. That is, that \(\delta x\) and \(\delta y\) are not two separate variables, but a single variable that represents 'change', and that in many cases this change is highly theoretical as it may symbolize change on a level that cannot be otherwise represented mathematically. This latter point may become clearer as we discuss the concept of infinity and limits in the next section.
-					</div>
-				</div>
-
-				<div class="separator"></div>
-
-				<div class="sub_box">
-					<div class="sub_heading">
-						Limits
+						A Conceptualization of Limits
 					</div>
 				</div>
 
@@ -151,12 +97,19 @@
 						\[f(x) = \frac{2}{1 + 0} = 2\]
 						Thus, \(2\) is said to be the limit with which \(\frac{2x}{1 +x}\) approaches infinity. The notation for expressing this limit is as follows:
 						\[\lim_{x \to \infty}\frac{2x}{1 + x} = 2 \]
-						<div class="separator"></div>
-						<div class="sub_section">
-							<div class="sub_section_heading">
-								Limits of the form \(\frac{0}{0}\)
-							</div>
-						</div>
+					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="sub_heading">
+						Limits of the form \(\frac{0}{0}\)
+					</div>
+				</div>
+				
+				<div class="slide_box">
+					<div class="slide_text">
 						The general understanding of limits has been conveyed so far, but there is another special case to consider, and that is the limit of a function of the form \(\frac{0}{0}\). Let us consider the following function:
 						\[f(x) = \frac{x^2 - 4}{x - 2} \]
 						It will be noticed, that it would be quite easy to solve this function for any value of \(x\). However, when \(x\) has a value of two, the solution is given by \(\frac{0}{0}\). This is a mathematical impossibility. But lets examine a few solutions that are just shy of \(2\).
@@ -181,12 +134,19 @@
 						As \(x\) approaches \(a\), \(h\) approaches \(0\), and:
 						\(\frac{x^2 - a^2}{x - a}\) approaches \(2a\). This means that \(2a\) is the limiting value of our function, and this can be expressed as:
 						\[\lim_{x \to \infty}\frac{x^2 - a^2}{x - a} = 2a \]
-						<div class="separator"></div>
-						<div class="sub_section">
-							<div class="sub_section_heading">
-								Theorems on Limits
-							</div>
-						</div>
+					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="sub_heading">
+						Theorems on Limits
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
 						The following are four theorems on limits:
 						<br>
 						1) If two variables are equal, their limits are always equal
@@ -197,9 +157,13 @@
 						\[\lim{(uv)} = \lim{(u)} * \lim{(v)} \]
 						4) The limit of the quotient of two functions is equal to the quotient of the limit of the separate functions, provided that the limit of the divisor is non-zero.  Hence, if \(u\) and \(v\) are functions of \(x\), then:
 						\[\lim{(\frac{u}{v})} = \frac{\lim{(u)}}{\lim{(v)}} \ \ , \ provided \ \ \lim{(v)} \neq 0 \]
-						<br>
-						<div class="separator"></div>
-						An example of how this is applied is given below.<br>
+
+						<div class="sub_section">
+							<div class="sub_section_heading">
+								Example:
+							</div>
+						</div>
+
 						Question: Find the limit of the following function as \(x\) becomes infinite:
 						\[f(x) = \frac{x^2 + 3x}{2x^2 - 5}\]
 						Solving:
