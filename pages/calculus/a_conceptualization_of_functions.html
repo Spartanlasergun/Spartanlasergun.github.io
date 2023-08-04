@@ -123,24 +123,62 @@
 							<div class="slide_text">
 								<div class="separator"></div>
 								EXAMPLE ONE:<br><br>
+
 								If \(f(x) = x^2 + 2x - 3\),<br> 
+
 								Solve for \(f(x + \delta x)\)<br>
+
 								Solution:
+
 								\[f(x + \delta x) = (x + \delta x)^2 + 2(x + \delta x) - 3\]
+
 								\[= x^2 + 2x(\delta x) + (\delta x)^2 + 2x + 2\delta x - 3\]
+
 								Hence:
+
 								\[f(x + \delta x) = x^2 + 2x(\delta x) + (\delta x)^2 + 2x + 2\delta x - 3\]
+
 								<div class="separator"></div>
+
 								EXAMPLE TWO:<br><br>
+
 								If \(f(x) = x^3\),<br>
+
 								Solve for \(f(x + \delta x)\)<br>
+
 								Solution:
+
 								\[f(x + \delta x) = (x + \delta x)^3\]
+
 								\[ = (x^2 + 2x\delta x + (\delta x)^2)(x + \delta x)\]
-								\[ = x^3 + 2x(\delta x)^2 + 2x^2\delta x + x(\delta x)^2 + (\delta x)^3 \]
-								\[ = x^3 + 3x(\delta x)^2 + 2x^2\delta x + (\delta x)^3 \]
+
+								\[ = x^3 + x^2\delta x + 2x^2\delta x + 2x(\delta x)^2 + x(\delta x)^2 + (\delta x)^3 \]
+
+								\[ = x^3 + 3x(\delta x)^2 + 3x^2\delta x + (\delta x)^3 \]
+
 								Hence:
-								\[f(x + \delta x) = x^3 + 3x(\delta x)^2 + 2x^2\delta x + (\delta x)^3 \]
+
+								\[f(x + \delta x) = x^3 + 3x(\delta x)^2 + 3x^2\delta x + (\delta x)^3 \]
+								<div class="separator"></div>
+								EXAMPLE THREE:<br><br>
+
+								If \(f(x) = x^2 + 2x + 1\),<br> 
+
+								Solve for \(f(x + \delta x) - f(x)\)<br>
+
+								Solution:
+
+								\[f(x + \delta x) - f(x) = (x + \delta x)^2 + 2(x + \delta x) - 1 - x^2 + 2x + 1\]
+
+								\[= x^2 + 2x(\delta x) + (\delta x)^2 + 2x + 2\delta x - 1 - x^2 + 2x + 1\]
+
+
+								\[ = 2x(\delta x) + (\delta x)^2  + 2\delta x \]
+
+								Hence:
+
+								\[f(x + \delta x) - f(x) = 2x(\delta x) + (\delta x)^2 + 2\delta x \]
+
 								<div class="separator"></div>
 							</div>							
 						</div>
