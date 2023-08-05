@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 
-x = list(range(-10, 10, 1))
-y = list(range(-10, 10, 1))
+x = list(range(0, 10, 1))
+y = list(range(0, 10, 1))
 
 origin = [0, 0, 0, 0, 0]
-axis = [-15, -5, 0, 5, 15]
+axis = [-2, 0, 2, 4, 10]
 
 plt.plot(x, y)
 plt.plot(origin, axis, color='black')
