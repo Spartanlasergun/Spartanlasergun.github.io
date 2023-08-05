@@ -82,8 +82,6 @@
 						\[m = \frac{y}{x}\]
 
 						\[m = \frac{change \ in \ y}{change \ in \ x} \]
-
-						The conception of change, and how it relates to the gradient is very important as it will distunguish some foundational ideas when we look at gradients in relation to curves. For now lets look at a more practical example.
 					</div>
 				</div>
 
@@ -92,6 +90,15 @@
 						The graph on the right illustrates uniform motion of an object with respect to time. We can take two points from this graph to solve for the gradient:
 
 						\[(0, 0) \ \ and \ \ (2, 2)\]
+
+						The gradient then is given by:
+
+						\[\frac{change \ in \ y}{change \ in \ x} = \frac{y_2 - y_1}{x_2 - x_1} = \frac{2 - 0}{2 - 0}\]
+
+						hence,
+						\[m = 1\]
+
+						The idea of change can also be easily demonstrated using popular mechanics.
 					</div>
 					<div class="slide_img_left">
 						<img src="../../images/uniform_motion.png" alt="uniform motion">
@@ -100,12 +107,42 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						In the previous section we discussed limits in relation to the graph of \(y = \frac{1}{x}\). We revisit this problem, but with a focus on understanding the relationship between limits and the gradient.
+						In mechanics, velocity(\(v\)) of an object is defined as the change in distance(\(s\)) travelled with respect to time(\(t\)):
+
+						\[v = \frac{change \ in \ distance}{change \ in \ time} = \frac{\Delta s}{\Delta t}\]
+
+						Hence,
+
+						\[v =  \frac{y_2 - y_1}{x_2 - x_1} = \frac{2 - 0}{2 - 0} = 1ms^{-1}\]
+
+						Therefore the object is travelling at rate of \(1ms^{-1}\), which represents a change in distance of one meter every second.
+						<br><br>
+						In calculus we are intimately concerned with the idea of inifinity. When we talk about change in calculus, we are concerned with the smallest possible changes that can be mathematically represented. I cannot help but feel as though I do a disservice to the reader in introducing the idea of the infinitesimal without any further discussion. But, as any further discussion seems to warrant knowledge that belongs to calculus itself, it seems as there is no other choice. On this point, we shall proceed, but with some discomfort.
+						<br><br>
+						With some algebraic reasoning, let us take \(\delta y\) as representing the smallest possible change in \(y\), and \(\delta x\) as representing the smallest possible change in the value of \(x\).
+						<br><br>
+						Our original equation of \(y = mx\) becomes:
+
+						\[y + \delta y = m(x + \delta x)\]
+
+						hence,
+
+						\[y + \delta y = mx + m\delta x\]
+
+						since \(y = mx\),
+
+						\[mx + \delta y = mx + \delta x\]
+						\[\frac{\delta y}{\delta x} = m\]
+					</div>			
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						So we have now put to rest the relationship between change and the gradient. When this change is non-linear, as in the case of a curve, the problem is much more complex and invovles the theoretical application of limits.
+						<br><br>
+						We discussed limits in relation to the graph of \(y = \frac{1}{x}\). We revisit this problem, but with a focus on understanding the relationship between limits and the gradient with respect to curved lines.
 						<br><br>
 						Straight lines possess a gradient that is constant regardless of the changes in \(x\) and \(y\), - precisely because any change in \(x\) in relation to \(y\) is always uniform.
-						<br><br>
-						
-						
 					</div>
 					<div class="slide_img_left">
 						<img src="../../images/limits_example.png" alt="limits ex">
@@ -114,16 +151,6 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						In fact, because the changes in \(x\) in relation to \(y\) is non-uniform, it needs to be represented by its own function. This function and its exact nature we will discuss later, for now we need to revisit the limits of our graph above. In particular, I want to explore
-						\[\lim_{x \to \infty}\frac{1}{x} = 0\]
-						and 
-						\[\lim_{x \to 1}\frac{1}{x} = 1\]
-						These two limits of our function are interesting. We can observe that as \(x\) approaches \(\infty\) (\(\lim_{x \to \infty}\)) we would be looking at a straight horizontal line whose gradient would be equal to \(0\). Did finding the limit produce the gradient at this point?
-						<br><br>
-						Alternatively, we can observe that as \(x\) approaches \(1\) (\(\lim_{x \to 1}\)) we would be looking at a straight vertical line whose gradient would be equal to \(1\). Did finding the limit produce the gradient of our curve at that point?
-						<br><br>
-						No. We did not find the gradient at that point as gradient is ratio of change in \(y\) and \(x\). What we found was a solution to the function of the curve at that point. The approach of \(x\) to \(\infty\), or the value \(1\), is conceived of by the smallest possible increment to that value - so infinitely small, that it is necessarily uniform and represents also the solution to the function of a straight line through that point - in this case, the line coincedentally being horizontal, or vertical and easily recognizable by gradients of \(0\) and \(1\) and solutions of \(0\) and \(1\) for all values of \(x\) or \(y\). 
-						<br><br>
 						The question becomes, how do we theoretically apply this understanding to find the gradient at any point on the curve that can be represented by a straight line through that point? The answer is, that we must form some conception of a function that can generally represent an infinitely small change in values of \(y\) and \(x\) for our function, and attempt to determine the ratio of these changes. If we can represent the function as a ratio of these changes, we can find the limit of this function, and it will yield a function that represents the gradient of the curve itself.
 						<br><br>
 						We already understand from studying functions that the symbol \(\delta\) is used to represent change in a variable:
