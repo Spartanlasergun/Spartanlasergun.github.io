@@ -54,7 +54,68 @@
 				<div class="separator"></div>
 
 				<div class="plain_text">
-					This section is meant to present a comprehensive overview of the application of functions and limits to produce what is commonly understood in calculus as the 'differential coefficent'. In one sense, this is a mathematical proof with a heavy theoretical basis in limits, and in the other can be thought of as a geometric reflection on rates-of-change and gradients, in relation to functions - linear, curved and otherwise. The dilemma in presenting this information is the necessity to conceptualize both of these ideas without taking the underlying theory of these individual concepts for granted. Further trouble arises wherein it becomes impossible to speak about gradients in relation to a curve without precluding an understanding of calculus itself.
+					This section is meant to present a comprehensive overview of the application of functions and limits to produce what is commonly understood in calculus as the 'differential coefficent'. In one sense, this is a mathematical proof with a heavy theoretical basis in limits, and in the other can be thought of as a geometric reflection on rates-of-change and gradients, in relation to functions - linear, curved and otherwise. The dilemma in presenting this information is the necessity to conceptualize both of these ideas without taking the underlying theory of these individual concepts for granted. To avoid any issues, it is necessary to present an introduction into the conception of the infinitesimal and changes on the infinitesimal scale.
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="sub_heading">
+						Infinity
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						In the previous section on limits, the idea of approach infinity was introduced. From this, it should be understood that some functions have theoretical limits that cannot be mathematically quantified or expressed without special consideration.
+						<br><br>
+						In this section it is necessary to expand our theoretical conception of infinity. Instead of considering the limit of a function, or the approach to infinity, I want to consider a change on the infinitesimal scale itself. In particular, I want to draw attention to the nature of this change, as it is of the utmost importance to calculus - as will be demonstrated later on.
+						<br><br>
+						Imagine that I have some variable \(x\), and some variable \(y\). Consider that these two variables represent an arbitrary point on a cartesian plane. Now consider an infinitely small change in both of these variables represent by \(\delta x\) and \(\delta y\).
+						<br><br>
+						In what direction has this change taken place? Well, it would be difficult to say left or right, up or down etc. An infinitely small change is so minute, that we can essentially consider that we have not moved from the original point. Moreover, we can make another inference. Since the change is infinitely small, it would be impossible for there to exist a point in between our original position and our infinitesimal change. Hence, the change in position from \( \ \ (x, \ y) \ \ \) to \( \ \ ((x + \delta x), \ (y + \delta y)) \  \ \) would necessarily occur in a straight line. The consideration that this change will always occur in a straight line is extremely important. In mathematically expressing this change, we can also define an expression for the gradient of this line, as the change itself has already been defined. This is the foundation of calculus. The mathematical proof of the relationship between this infinitesimal change and the gradient of a straight line is given below.
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						Consider the graph on the right. As a straight line graph we know that it would be defined by some function of the form:
+
+						\[y = mx + c\]
+
+						We also know that the gradient of this line is the ratio of change in \(y\) and \(x\). Hence:
+
+						\[m = \frac{change \ in \ y}{change \ in \ x} \]
+
+						\[m = \frac{y_2 - y_1}{x_2 - x_1}\]
+
+						\[m = \frac{\delta y}{\delta x}\]
+					</div>
+					<div class="slide_img_left">
+						<img src="../../images/uniform_motion.png" alt="uniform motion">
+					</div>					
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						Taking our original function, \( \ y = mx + c \ \ \) we can define our gradient in terms of this infinitesimal change. This is illustrated below:
+						
+						\[y = mx + c\]
+
+						\[y + \delta y = m(x + \delta x) + c\]
+
+						Hence,
+
+						\[mx + c + \delta y = mx + m\delta x + c\]
+
+						\[\delta y = mx + m\delta x\]
+
+						\[\frac{\delta y}{\delta x} = \frac{mx}{\delta x} + m\]
+
+						Recall, we are considering an infinitesimal change. This means that we need to consider the limits of this function.
+
+						\[\lim_{\delta x \to \infty} \frac{\delta y}{\delta x} = m\]
+					</div>					
 				</div>
 
 				<div class="separator"></div>
