@@ -112,9 +112,9 @@
 
 						\[\frac{\delta y}{\delta x} = \frac{mx}{\delta x} + m\]
 
-						Recall, we are considering an infinitesimal change. This means that we need to consider the limits of this function.
+						Recall, we are considering an infinitely \(small\) change represented by \(\delta x\) and \(\delta y\). This means that we need to consider the limits of this function as \(\delta x\) approaches 0.
 
-						\[\lim_{\delta x \to \infty} \frac{\delta y}{\delta x} = m\]
+						\[\lim_{\delta x \to 0} \frac{\delta y}{\delta x} = m\]
 
 						If you have followed the theoretical explanation along with the math up to this point, it may seem a bit odd that we have represented the gradient in such a way. In fact, it may seem as though the changes on an infintesimal scale represents genuine quantifiable change, without consequence, - which it does. This is a bit difficult to conceptualize, and as such I would suggest that this change should be thought of in the light of natural law. It is complex enough that it cannot easily be understood or conceptualized, but indeed it does represent something fundamental and natural as it concerns the nature of change.
 						<br><br>
@@ -148,6 +148,8 @@
 						- and lets consider an infinitesimal change from this point represented by 
 
 						\[(x + \delta x), \ (y + \delta y)\]
+
+						We understand theoretically from the nature of this change, that it is too small to be considered different from the position \((x, \ y)\), and it will necessarily occur in a straight line. Hence, if we find the gradient associated with this change, we will find the gradient of the curve at that point.
 					</div>
 					<div class="slide_img_left">
 						<img src="../../images/y=x².png" alt="graph of y=x_sq">
@@ -156,7 +158,23 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						We understand theoretically from the nature of this change, that it is too small to be considered different from the position \((x, \ y)\), and it will necessarily occur in a straight line. Hence, if we find the gradient associated with this change, we will find the gradient of the curve at that point. Consequently, it will also represent the gradient of a straight line that is tangential to the curve at that point. 
+						Consequently, it will also represent the gradient of a straight line that is tangential to the curve at that point. The mathematical proof of this is illustrated below:
+
+						\[y = x^2 \ \ \ \ --equation \ \ one\]
+
+						\[y + \delta y = (x + \delta x)^2 \ \ \ \ --equation \ \ two\]  
+
+						Hence,
+
+						\[x^2 + \delta y = x^2 + 2x\delta x + (\delta x)^2 \]
+
+						\[\delta y = 2x\delta x + (\delta x)^2\]
+
+						\[\frac{\delta y}{\delta x} = 2x + \delta x\]
+
+						Recall, we are considering an infinitely \(small\) change represented by \(\delta x\) and \(\delta y\). This means that we need to consider the limits of this function as \(\delta x\) approaches 0.
+						
+						\[\lim_{\delta x \to 0} \frac{\delta y}{\delta x} = 2x\]
 					</div>				
 				</div>
 
