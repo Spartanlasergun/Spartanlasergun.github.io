@@ -100,9 +100,9 @@
 					<div class="slide_text">
 						Taking our original function, \( \ y = mx + c \ \ \) we can define our gradient in terms of this infinitesimal change. This is illustrated below:
 						
-						\[y = mx + c\]
+						\[y = mx + c \ \ \ \ ---equation \ \ one\]
 
-						\[y + \delta y = m(x + \delta x) + c\]
+						\[y + \delta y = m(x + \delta x) + c \ \ \ \ ---equation \ \ two\]
 
 						Hence,
 
@@ -112,7 +112,7 @@
 
 						\[\frac{\delta y}{\delta x} = \frac{mx}{\delta x} + m\]
 
-						Recall, we are considering an infinitely \(small\) change represented by \(\delta x\) and \(\delta y\). This means that we need to consider the limits of this function as \(\delta x\) approaches 0.
+						Recall, we are considering an infinitely \(small\) change represented by \(\delta x\) and \(\delta y\). Since \(\delta y\) represents change in the function itself, we need to consider change in \(\delta x\) - as this is the independent variable. This means that we need to consider the limits of this function as \(\delta x\) approaches 0.
 
 						\[\lim_{\delta x \to 0} \frac{\delta y}{\delta x} = m\]
 
@@ -131,7 +131,7 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						Of course, deriving the gradient of a straight line in such a way has little to no value. The practical value of this understanding comes when it is applied to curved functions. This is another difficult idea to conceptualize. Do curved lines have a gradient? Yes, they do. Rather, the gradient of a curved line is constantly changing and is different from place to place - hence, it is represented by a function rather that a static value. In the same way that we have derived the gradient for the linear function based on an infinitesimal change, we can now derive a function of the gradient for a curved line.
+						Of course, deriving the gradient of a straight line in such a way has little to no value. The practical value of this understanding comes when it is applied to curved functions. This is another difficult idea to conceptualize. Do curved lines have a gradient? Yes, they do. Rather, the gradient of a curved line is constantly changing and is different from place to place - hence, it is represented by a function rather than a static value. In the same way that we have derived the gradient for the linear function based on an infinitesimal change, we can now derive a function for the gradient of a curved line.
 					</div>
 				</div>
 
@@ -172,179 +172,11 @@
 
 						\[\frac{\delta y}{\delta x} = 2x + \delta x\]
 
-						Recall, we are considering an infinitely \(small\) change represented by \(\delta x\) and \(\delta y\). This means that we need to consider the limits of this function as \(\delta x\) approaches 0.
-						
+						Recall, we are considering an infinitely \(small\) change represented by \(\delta x\) and \(\delta y\). Since \(\delta y\) represents change in the function itself, we need to consider change in \(\delta x\) - as this is the independent variable. This means that we need to consider the limits of this function as \(\delta x\) approaches 0.
+
 						\[\lim_{\delta x \to 0} \frac{\delta y}{\delta x} = 2x\]
 					</div>				
 				</div>
-
-				<div class="separator"></div>
-
-				<div class="sub_box">
-					<div class="sub_heading">
-						Defining the Gradient
-					</div>
-				</div>
-
-				<div class="slide_box">
-					<div class="slide_text">
-						The problem in attempting to address the idea of gradient as it is relevant to curves, is that while the algebraic and theoretical reasoning for the gradient of a straight line is simple and foundational, the theoretical basis for the gradient function of a curve is different enough that it can be considered a problem in its own right.
-						<br><br>
-						Nevertheless, we will begin with a reflection on the function of a straight line.
-
-						\[y = mx + c\]
-
-						Above is the basic function of a straight line. We can simplify this much further by taking the function of a straight line that passes through the origin. In which case the y-intercept is \(0\) and the resulting function is given by:
-
-						\[y = mx\]
-
-						Now we can represent this function solely in terms of the gradient, where
-
-						\[m = \frac{y}{x}\]
-
-						\[m = \frac{change \ in \ y}{change \ in \ x} \]
-					</div>
-				</div>
-
-				<div class="slide_box">
-					<div class="slide_text">
-						The graph on the right illustrates uniform motion of an object with respect to time. We can take two points from this graph to solve for the gradient:
-
-						\[(0, 0) \ \ and \ \ (2, 2)\]
-
-						The gradient then is given by:
-
-						\[\frac{change \ in \ y}{change \ in \ x} = \frac{y_2 - y_1}{x_2 - x_1} = \frac{2 - 0}{2 - 0}\]
-
-						hence,
-						\[m = 1\]
-
-						The idea of change can also be easily demonstrated using popular mechanics.
-					</div>
-					<div class="slide_img_left">
-						<img src="../../images/uniform_motion.png" alt="uniform motion">
-					</div>					
-				</div>
-
-				<div class="slide_box">
-					<div class="slide_text">
-						In mechanics, velocity(\(v\)) of an object is defined as the change in distance(\(s\)) travelled with respect to time(\(t\)):
-
-						\[v = \frac{change \ in \ distance}{change \ in \ time} = \frac{\Delta s}{\Delta t}\]
-
-						Hence,
-
-						\[v =  \frac{y_2 - y_1}{x_2 - x_1} = \frac{2 - 0}{2 - 0} = 1 \ ms^{-1}\]
-
-						Therefore the object is travelling at rate of \(1 \ ms^{-1}\), which represents a change in distance of one meter every second.
-						<br><br>
-						In calculus we are intimately concerned with the idea of inifinity. When we talk about change in calculus, we are concerned with the smallest possible changes that can be mathematically represented.
-						<br><br>
-						With some algebraic reasoning, let us take \(\delta y\) as representing the smallest possible change in \(y\), and \(\delta x\) as representing the smallest possible change in the value of \(x\).
-						<br><br>
-						Our original equation of \(y = mx\) becomes:
-
-						\[y + \delta y = m(x + \delta x)\]
-
-						hence,
-
-						\[y + \delta y = mx + m\delta x\]
-
-						since \(y = mx\),
-
-						\[mx + \delta y = mx + \delta x\]
-
-						\[\frac{\delta y}{\delta x} = m\]
-					</div>			
-				</div>
-
-				<div class="slide_box">
-					<div class="slide_text">
-						<br><br>
-						So we have now put to rest the relationship between change and the gradient. When this change is non-linear, as in the case of a curve, the problem is much more complex and invovles the theoretical application of limits.
-						<br><br>
-						We have in a previous section, studied limits in relation to the graph of \(y = \frac{1}{x}\). It makes sense to revisit this problem, but with a focus on understanding the relationship between limits and the gradient of curved lines.
-					</div>
-					<div class="slide_img_left">
-						<img src="../../images/limits_example.png" alt="limits ex">
-					</div>
-				</div>
-
-				<div class="slide_box">
-					<div class="slide_text">
-						So, how do we theoretically apply an understanding of limits to find the gradient at any point on the curve. Well in theory, the gradient at any point on a curve can be represented by a straight line through that point that is tangential to the curve. Infinitely small changes in \(x\) and \(y\) values are theoretically small enough that they will necessarily represent change in a straight line.
-						<br><br>
-						Therefore, we must form some conception of a function that can generally represent an infinitely small change in values of \(y\) and \(x\) for our curve function, and attempt to determine the ratio of these changes. If we can represent the curve function as a ratio of these changes, we can find the limit of this function, and in turn it will yield a function that represents the gradient of the curve itself.
-						<br><br>
-						We already understand from studying functions that the symbol \(\delta\) is used to represent change in a variable:
-						<br><br>
-						We have our curve function \(y = \frac{1}{x}\)
-						<br>
-						Let \(\delta y =\) the smallest possible change in the function \(y\)
-						<br>
-						Let \(\delta x =\) the smallest possible change in the variable \(x\)
-						<br>
-						Therefore, the gradient will be given by: \(\frac{\delta y}{\delta x}\)
-						<br>
-						Solving for \(\lim_{\delta x \to \infty}\frac{\delta y}{\delta x}\)
-						\[y = f(x)\]
-
-						\[y = \frac{1}{x}\]
-
-						\[y + \delta y = \frac{1}{x + \delta x}\]
-
-						\[(y + \delta y)(x + \delta x) = 1\]
-
-						Since \(y = \frac{1}{x}\):
-
-						\[(\frac{1}{x} + \delta y)(x + \delta x) = 1\]
-
-						Expanding:
-
-						\[1 + \frac{\delta x}{x} + x(\delta y) + (\delta y)(\delta x) = 1 \]
-
-						Reducing:
-
-						\[\frac{\delta x}{x} + x(\delta y) + (\delta y)(\delta x) = 0\]
-
-						Multiplying by \(x\):
-
-						\[\delta x + x^2(\delta y) + x(\delta y)(\delta x) = 0\]
-
-						We are solving for the limit of the function given by \(\frac{\delta y}{\delta x}\), hence we manipulate the terms:
-
-						\[\delta x + x(\delta y)(\delta x) = -x^2(\delta y)\]
-
-						Multiplying by \(\frac{1}{\delta y}\):
-
-						\[\frac{\delta x}{\delta y} + x(\delta x) = -x^2 \]
-
-						\[\frac{\delta x}{\delta y} = -x^2 - x(\delta x)\]
-
-						Inverting:
-
-						\[\frac{\delta y}{\delta x} = \frac{-1}{x^2} - \frac{1}{x(\delta x)}\]
-
-						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \frac{-1}{x^2} - \lim_{\delta x \to 0}\frac{1}{x(\delta x)}\]
-
-						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \frac{-1}{x^2} - 0\]
-
-						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \frac{-1}{x^2}\]
-
-						or
-
-						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = -x^{-2}\]
-
-						In mathematics, we say that the limit is called the differential coefficient with respect to \(x\), the independent variable. Hence, for the function \(y = \frac{1}{x}\),
-
-						\[\frac{\delta y}{\delta x} = -x^{-2}\]
-
-						Therefore we say that the differential coefficient is \(-x^{-2}\)
-
-						<div class="separator"></div>
- 					</div>
-				</div>
-
 			</div>
 		</div>
 	</body>
