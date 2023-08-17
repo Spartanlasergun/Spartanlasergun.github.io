@@ -12,11 +12,12 @@ a = x
 b = []
 
 for item in a:
-	func = (20 * item) - 100
+	func = (100 * item) - 2500
 	b.append(func)
 
 
 plt.plot(x, y)
 plt.plot(a, b)
+plt.title('Tangent to the curve y=x² at (50, 2500)')
 plt.grid(True)
-plt.show()
+plt.savefig('tangent.png', dpi=75, transparent=True)
