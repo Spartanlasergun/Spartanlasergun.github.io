@@ -22,7 +22,7 @@ b = x[index]
 x_1 = [0, b, b]
 y_1 = [10, 10, 0]
 
-plt.title('a = 2ᵇ')
+plt.title('y = 2ˣ')
 plt.grid(True)
 
 plt.plot(x_1, y_1, linestyle='--')
@@ -34,4 +34,4 @@ point = "(3.32, 10)"
 plt.annotate(point, xy=(3, 10), xytext=(3, 11), color='blue')
 
 
-plt.savefig('a = 2ᵇ.png', transparent=True, dpi=75)  # Adjust the file name and DPI as needed
+plt.savefig('y = 2ˣ.png', transparent=True, dpi=75)  # Adjust the file name and DPI as needed
