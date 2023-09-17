@@ -120,7 +120,8 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						Frequency is one of the more general ideas in statistics. It is a measurment for the number of occurences in a dataset that can be classified catergorically in a grouped or ungrouped manner. This may sound complex, but it is not. Consider the following dataset:
+						Frequency is one of the more general ideas in statistics. It is a measurment for the number of occurences in a dataset that can be classified catergorically in a grouped or ungrouped manner. The complexity of working with frequencies increases as the data itself gets more complex. This will be illustrated as we proceed. Consider the following dataset:
+
 						<table>	
 						  <tr>
 						    <th>Height (cm)</th>
@@ -139,6 +140,114 @@
 						    <td>6</td>
 						  </tr>
 						</table>
+
+						In the first row we have various categories of Heights, ranging from 150cm to 154cm. In the second row, we have the number of children that fall into each of these categories, i.e. we have the frequency with which each of these Heights occur for the given sample of children. This data is simple enough. If we wanted to take the mean, we can do a standard calculation:
+
+
+
+						\[\bar x = \frac{\Sigma f_ix_i}{n}\]
+
+						\[\bar x = \frac{(150*5) + (151*8) + (152*15) + (153*3) + (154*6)}{5 + 8 + 15 + 3 + 6}\]
+
+						\[\bar x = \frac{5621}{37}\]
+
+						\[\bar x = 151.9189cm\]
+
+						However, things can very easily get more complex if we group the data differently. Consider the following dataset:
+
+						<table>	
+						  <tr>
+						    <th>Height (cm)</th>
+						    <th>150-151</th>
+						    <th>151-152</th>
+						    <th>152-153</th>
+						    <th>153-154</th>
+						    <th>154-155</th>
+						  </tr>
+						  <tr>
+						    <td>No. of Children</td>
+						    <td>5</td>
+						    <td>8</td>
+						    <td>15</td>
+						    <td>3</td>
+						    <td>6</td>
+						  </tr>
+						</table>
+
+						Instead of discreet categories of heights, our data is not represented by interval categories. The problem with this is readily apparent, in the fact that the precise meaning of our data is now lost somewhere in the intervals we have defined. If we wanted to take an average of heights, it would not be very easy to do so. I suppose, we could take the midpoints of each interval as a representation of the average freqency for each category, but for more complex datasets this simple numerical method is not going to be very accurate. But, we can try it anyways:
+
+						<table>	
+						  <tr>
+						    <th>midpoints (cm)</th>
+						    <th>150.5</th>
+						    <th>151.5</th>
+						    <th>152.5</th>
+						    <th>153.5</th>
+						    <th>154.5</th>
+						  </tr>
+						  <tr>
+						    <td>No. of Children</td>
+						    <td>5</td>
+						    <td>8</td>
+						    <td>15</td>
+						    <td>3</td>
+						    <td>6</td>
+						  </tr>
+						</table>
+
+						\[\bar x = \frac{\Sigma f_ix_i}{n}\]
+
+						\[\bar x = \frac{(150.5*5) + (151.5*8) + (152.5*15) + (153.5*3) + (154.5*6)}{5 + 8 + 15 + 3 + 6}\]
+
+						\[\bar x = \frac{5639.5}{37}\]
+
+						\[\bar x = 152.4189cm\]
+
+						A more acceptable method for finding the central tendency of data represented by complex intervals is to plot a cumulative frequency curve using linear interpolation, and estimate the median value based on the graph. When I say plot using linear interpolation, I am not speaking about actually performing a mathematical calculation - though, it most certainly is a real mathematical way of defining a curve based on a set of datapoints. However, the reader can explore this topic on his/her own time, as it is much more advanced than we can discuss here. To plot our graph I am simply going to rely on mathematical software to do the interpolation for me. 
+						<br><br>
+						To plot the graph, we first have to define boundaries that are acceptable for our given intervals - this can be the lower boundary, the upper boundary, or the midpoint as we have already taken. We also have to calculate the cumulative frequency which is just some simple addition. Our datapoints for the graph are shown below:
+
+						<table>	
+						  <tr>
+						    <th>midpoints (cm)</th>
+						    <th>150.5</th>
+						    <th>151.5</th>
+						    <th>152.5</th>
+						    <th>153.5</th>
+						    <th>154.5</th>
+						  </tr>
+						  <tr>
+						    <td>Cumulative Frequency</td>
+						    <td>5</td>
+						    <td>13</td>
+						    <td>28</td>
+						    <td>31</td>
+						    <td>37</td>
+						  </tr>
+						</table>
+
+						Now that we have our values, we can plot our curve and estimate the median.
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						We take the center of the frequencies, as representing the middle of the dataset and the corresponding \(x\) value gives us an estimated median for our dataset.
+						<br><br>
+						In this case, our estimated median is
+
+						\[151.8333\]
+
+						Earlier we discussed the varying usage of the mean, mode and median. When working with grouped data, a median estimate using a cumulative frequency curve is one of the best illustrations of why the mean is not (by default) the best measure of central tendency.
+					</div>
+					<div class="slide_img_left">
+						<img src="../../images/cum_freq_curve.png" alt="cum_freq_curve">
+					</div>					
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						It is simply one of many different and useful statistical descriptors.
 					</div>
 				</div>
 

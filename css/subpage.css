@@ -516,6 +516,6 @@ body {
 table, th, td {
 	margin: 0 auto;
 	border-collapse: collapse;
-	border: 1px solid black;
-	padding: 15px;
+	border: 1px solid #eb5e28;
+	padding: 10px;
 }
