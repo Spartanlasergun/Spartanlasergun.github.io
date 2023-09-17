@@ -511,3 +511,11 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+
+table, th, td {
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 1px solid black;
+	padding: 15px;
+}
