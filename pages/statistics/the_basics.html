@@ -174,7 +174,7 @@
 						  </tr>
 						</table>
 
-						Instead of discreet categories of heights, our data is not represented by interval categories. The problem with this is readily apparent, in the fact that the precise meaning of our data is now lost somewhere in the intervals we have defined. If we wanted to take an average of heights, it would not be very easy to do so. I suppose, we could take the midpoints of each interval as a representation of the average freqency for each category, but for more complex datasets this simple numerical method is not going to be very accurate. But, we can try it anyways:
+						Instead of singular categories of heights, our data is now represented by intervals. The problem with this is readily apparent, in the fact that the precise meaning of our data is now lost somewhere in the intervals we have defined. If we wanted to take an average of heights, it would not be very easy to do so. I suppose, we could take the midpoints of each interval as a representation of the average freqency for each category, but for more complex datasets this simple numerical method is not going to be very accurate. But, we can try it anyways:
 
 						<table>	
 						  <tr>
@@ -203,9 +203,9 @@
 
 						\[\bar x = 152.4189cm\]
 
-						A more acceptable method for finding the central tendency of data represented by complex intervals is to plot a cumulative frequency curve using linear interpolation, and estimate the median value based on the graph. When I say plot using linear interpolation, I am not speaking about actually performing a mathematical calculation - though, it most certainly is a real mathematical way of defining a curve based on a set of datapoints. However, the reader can explore this topic on his/her own time, as it is much more advanced than we can discuss here. To plot our graph I am simply going to rely on mathematical software to do the interpolation for me. 
+						A more acceptable method for finding the central tendency of data represented by complex intervals is to plot a cumulative frequency curve using linear interpolation, and estimate the median value based on the graph. When I say plot using linear interpolation, I am not speaking about actually performing a mathematical calculation - though, it most certainly is a real mathematical way of defining a curve based on a set of datapoints. However, the reader can explore this topic on his/her own time, as it is much more advanced than we can discuss here. If you were using graph paper, it would be reasonably acceptable to plot the points and average a curve by hand. To plot our graph I am simply going to rely on mathematical software to do the interpolation for me. 
 						<br><br>
-						To plot the graph, we first have to define boundaries that are acceptable for our given intervals - this can be the lower boundary, the upper boundary, or the midpoint as we have already taken. We also have to calculate the cumulative frequency which is just some simple addition. Our datapoints for the graph are shown below:
+						To plot the graph, we first have to define boundaries that are acceptable for our given intervals - this can be the lower interval boundaries, the upper interval boundaries, or the midpoints of the intervals as we have already taken. The reasoning for how we select the boundary is dependent on the nature of the data, and what the statistician himself is trying to accomplish. To keep things simple, we'll stick with the midpoints. We also have to calculate the cumulative frequency which is just some simple addition. Our datapoints for the graph are shown below:
 
 						<table>	
 						  <tr>
@@ -247,8 +247,16 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						It is simply one of many different and useful statistical descriptors.
+						It is simply one of many different and useful statistical descriptors. In the real world, our data is going to take on many different forms, and it is the job of the researcher to understand how to work with any given dataset.
 					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="sub_heading">
+						Histograms
+					</div>					
 				</div>
 
 			</div>
