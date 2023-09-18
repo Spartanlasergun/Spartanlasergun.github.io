@@ -41,7 +41,7 @@
 				</div>
 
 				<div class="selected_box">
-					<p><a href="https://spartanlasergun.github.io/pages/statistics/the_basics.html">The Basics</a></p>
+					<p><a href="https://spartanlasergun.github.io/pages/statistics/the_basics_part_one.html">The Basics - Part One</a></p>
 				</div>
 
 			</div>
@@ -145,7 +145,7 @@
 
 
 
-						\[\bar x = \frac{\Sigma f_ix_i}{n}\]
+						\[\bar x = \frac{\Sigma f_ix_i}{f_i}\]
 
 						\[\bar x = \frac{(150*5) + (151*8) + (152*15) + (153*3) + (154*6)}{5 + 8 + 15 + 3 + 6}\]
 
@@ -195,7 +195,7 @@
 						  </tr>
 						</table>
 
-						\[\bar x = \frac{\Sigma f_ix_i}{n}\]
+						\[\bar x = \frac{\Sigma f_ix_i}{f_i}\]
 
 						\[\bar x = \frac{(150.5*5) + (151.5*8) + (152.5*15) + (153.5*3) + (154.5*6)}{5 + 8 + 15 + 3 + 6}\]
 
@@ -257,6 +257,68 @@
 					<div class="sub_heading">
 						Histograms
 					</div>					
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						Histograms are a way of representing data that is divided based on non-uniform intervals. I specify the term 'non-uniform', because if the intervals were uniform, we would have essentially graphed a Bar-Chart rather than a Histogram. The non-uniform intervals constitute the unique attribute that warrants a Histogram. This can be demonstrated easily. Consider the dataset:
+
+						<table>	
+						  <tr>
+						    <th>Heights (cm)</th>
+						    <th>150-153</th>
+						    <th>153-155</th>
+						    <th>155-156</th>
+						    <th>156-158</th>
+						    <th>158-160</th>
+						  </tr>
+						  <tr>
+						    <td>Women</td>
+						    <td>5</td>
+						    <td>8</td>
+						    <td>15</td>
+						    <td>3</td>
+						    <td>6</td>
+						  </tr>
+						</table>
+
+						The dataset shows the Heights (cm) of women over arbitrary intervals. If we were to plot this data just as it is, the graph will not correctly illustrate the spread of the data. First we must calculate the frequency density for each interval. The frequency density as a ratio of the frequency to the class width gives us a much more accurate depiction of how the data is spread. Taking the formula:
+
+						\[frequency \ \ density = \frac{frequency}{interval \ \ width}\]
+
+						We can calcuate the datapoints for out histogram:
+
+						<table>	
+						  <tr>
+						    <th>Intervals</th>
+						    <th>150-153</th>
+						    <th>153-155</th>
+						    <th>155-156</th>
+						    <th>156-158</th>
+						    <th>158-160</th>
+						  </tr>
+						  <tr>
+						    <td>Frequency Density</td>
+						    <td>1.667</td>
+						    <td>4.0</td>
+						    <td>15.0</td>
+						    <td>1.5</td>
+						    <td>3.0</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="center_image">
+						<img src="../../images/histogram.png" alt="histogram">
+					</div>
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						Since I am using python to generate the histogram, the frequency densities are normalized to values between 1 and 0. But, this does not change the spread of the data.
+					</div>
 				</div>
 
 			</div>
