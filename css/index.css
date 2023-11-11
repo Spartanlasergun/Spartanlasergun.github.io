@@ -28,14 +28,14 @@ body {
 	padding-left: 50p1;
 	margin-top: 1%;
 	margin-left: 2%;
-	background-color: rgba(57, 11, 12, 0.40);
+	background: linear-gradient(to right, rgba(57, 11, 12, 1.0), rgba(57, 11, 12, 0.0));
 	width: 40%;
 	height: auto;
 	border-bottom: 2px solid grey;
 }
 
 .title page_name {
-	font-family: "Playfair Display"; 
+	font-family: "Raleway"; 
 	font-size: 35px;
 	line-height: 1.5;
 	color: rgba(248, 248, 248, 1.0);
