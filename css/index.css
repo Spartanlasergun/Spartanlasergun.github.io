@@ -26,11 +26,11 @@ body {
 	align-items: left;
 	text-align: left;
 	padding-left: 50px;
-	margin-top: 1%;
-	margin-left: 2%;
+	margin-top: 20px;
+	margin-left: 20px;
 	background: linear-gradient(to right, rgba(57, 11, 12, 1.0), rgba(57, 11, 12, 0.0));
 	width: 40%;
-	height: auto;
+	height: 50px;
 	border-bottom: 2px solid grey;
 }
 
@@ -57,147 +57,54 @@ body {
 	background-color: rgba(57, 11, 12, 0.75);
 }
 
-
-.left-center-shelf {
+.shelf-two {
 	display: flex;
 	position: fixed;
 	width: 150px;
 	height: 75px;
-	top: 50%;
-	left: 50%;
+	top: 175px;
+	left: 30px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	transform: translate(-50%, -50%) translateX(-250px);
 }
 
-.left-center-shelf:hover {
+.shelf-two:hover {
 	background-color: rgba(57, 11, 12, 0.75);
 }
 
-.right-center-shelf {
+.shelf-three {
 	display: flex;
 	position: fixed;
 	width: 150px;
 	height: 75px;
-	top: 50%;
-	left: 50%;
+	top: 260px;
+	left: 30px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	transform: translate(-50%, -50%) translateX(250px);
 }
 
-.right-center-shelf:hover {
+.shelf-three:hover {
 	background-color: rgba(57, 11, 12, 0.75);
 }
 
-.top-left-shelf {
+.shelf-four {
 	display: flex;
 	position: fixed;
 	width: 150px;
 	height: 75px;
-	top: 50%;
-	left: 50%;
+	top: 345px;
+	left: 30px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	transform: translate(-50%, -50%) translateX(-240px) translateY(-80px);
 }
 
-.top-left-shelf:hover {
+.shelf-four:hover {
 	background-color: rgba(57, 11, 12, 0.75);
 }
 
-.top-right-shelf {
-	display: flex;
-	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 50%;
-	left: 50%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	transform: translate(-50%, -50%) translateX(240px) translateY(-80px);
-	text-decoration: none;
-}
-
-.top-right-shelf:hover {
-	background-color: rgba(57, 11, 12, 0.75);
-}
-
-.bot-left-shelf {
-	display: flex;
-	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 50%;
-	left: 50%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	transform: translate(-50%, -50%) translateX(-240px) translateY(80px);
-	text-decoration: none;
-}
-
-.bot-left-shelf:hover {
-	background-color: rgba(57, 11, 12, 0.75);
-}
-
-.bot-right-shelf {
-	display: flex;
-	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 50%;
-	left: 50%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	transform: translate(-50%, -50%) translateX(240px) translateY(80px);
-	text-decoration: none;
-}
-
-.bot-right-shelf:hover {
-	background-color: rgba(57, 11, 12, 0.75);
-}
-
-.top-left-corner-shelf {
-	display: flex;
-	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 50%;
-	left: 50%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	transform: translate(-50%, -50%) translateX(-180px) translateY(-160px);
-	text-decoration: none;
-}
-
-.top-left-corner-shelf:hover {
-	background-color: rgba(57, 11, 12, 0.75);
-}
-
-.top-right-corner-shelf {
-	display: flex;
-	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 50%;
-	left: 50%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	transform: translate(-50%, -50%) translateX(180px) translateY(-160px);
-	text-decoration: none;
-}
-
-.top-right-corner-shelf:hover {
-	background-color: rgba(57, 11, 12, 0.75);
-}
 
 /* style page footer */
 .footer {
@@ -233,6 +140,6 @@ body {
 
 #butterfly {
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 20px;
+	top: 60px;
 }
