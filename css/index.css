@@ -41,6 +41,23 @@ body {
 	color: rgba(248, 248, 248, 1.0);
 }
 
+.top-shelf {
+	display: flex;
+	position: fixed;
+	width: 150px;
+	height: 75px;
+	top: 90px;
+	left: 30px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.top-shelf:hover {
+	background-color: rgba(57, 11, 12, 0.75);
+}
+
+
 .left-center-shelf {
 	display: flex;
 	position: fixed;
@@ -143,23 +160,6 @@ body {
 }
 
 .bot-right-shelf:hover {
-	background-color: rgba(57, 11, 12, 0.75);
-}
-
-.top-shelf {
-	display: flex;
-	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 50%;
-	left: 50%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	transform: translate(-50%, -50%) translateY(-210px);
-}
-
-.top-shelf:hover {
 	background-color: rgba(57, 11, 12, 0.75);
 }
 
