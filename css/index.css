@@ -25,7 +25,7 @@ body {
 	justify-content: left;
 	align-items: left;
 	text-align: left;
-	padding-left: 50p1;
+	padding-left: 50px;
 	margin-top: 1%;
 	margin-left: 2%;
 	background: linear-gradient(to right, rgba(57, 11, 12, 1.0), rgba(57, 11, 12, 0.0));
@@ -204,11 +204,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) translateY(250px);
+	bottom: 0%;
+	width: 100%;
 	justify-content: center;
-	background-color: rgba(57, 11, 12, 0.5);
+	background: linear-gradient(to top, rgba(57, 11, 12, 1), rgba(57, 11, 12, 0))
 }
 
 .footer p {
@@ -224,7 +223,7 @@ body {
 
 
 .external-link {
-	color: #003844;
+	color: #eb5e28;
 	font-weight: bold;
 	text-decoration: none;
 }
