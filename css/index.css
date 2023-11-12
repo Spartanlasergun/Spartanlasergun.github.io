@@ -44,8 +44,8 @@ body {
 .shelf-one {
 	display: flex;
 	position: fixed;
-	width: 150px;
-	height: 75px;
+	width: 200px;
+	height: 100px;
 	top: 90px;
 	left: 30px;
 	justify-content: center;
@@ -62,7 +62,7 @@ body {
 	position: fixed;
 	width: 150px;
 	height: 75px;
-	top: 175px;
+	top: 195px;
 	left: 30px;
 	justify-content: center;
 	align-items: center;
@@ -78,7 +78,7 @@ body {
 	position: fixed;
 	width: 150px;
 	height: 75px;
-	top: 260px;
+	top: 280px;
 	left: 30px;
 	justify-content: center;
 	align-items: center;
@@ -94,7 +94,7 @@ body {
 	position: fixed;
 	width: 150px;
 	height: 75px;
-	top: 345px;
+	top: 365px;
 	left: 30px;
 	justify-content: center;
 	align-items: center;
