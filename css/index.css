@@ -60,9 +60,9 @@ body {
 .shelf-two {
 	display: flex;
 	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 195px;
+	width: 200px;
+	height: 100px;
+	top: 210px;
 	left: 30px;
 	justify-content: center;
 	align-items: center;
@@ -76,9 +76,9 @@ body {
 .shelf-three {
 	display: flex;
 	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 280px;
+	width: 200px;
+	height: 100px;
+	top: 340px;
 	left: 30px;
 	justify-content: center;
 	align-items: center;
@@ -92,9 +92,9 @@ body {
 .shelf-four {
 	display: flex;
 	position: fixed;
-	width: 150px;
-	height: 75px;
-	top: 365px;
+	width: 200px;
+	height: 100px;
+	top: 460px;
 	left: 30px;
 	justify-content: center;
 	align-items: center;
