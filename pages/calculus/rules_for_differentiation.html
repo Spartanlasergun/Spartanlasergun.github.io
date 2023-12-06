@@ -85,7 +85,54 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						
+						Starting with the product rule, we will first consider trying to differentiate a function that is a product of two other functions, i.e.
+						\[f(x) = f(u) * f(v) \]
+
+						Or more simply,
+
+						\[y = u * v\]
+
+						To differentiate the above function, we can begin by applying the first principles to the problem. That is to say, that an infinitely small increase in \(y\), given by \(\delta y\), results in an infinitely small increase in \(u\) and \(v\), given by \(\delta u\) and \(\delta v\).
+
+						\[y + \delta y = (u + \delta u)(v + \delta v)\]
+
+						Expanding we get:
+
+						\[y + \delta y = uv + u\delta v + v\delta u + \delta u\delta v\]
+
+						Since \(y = uv\)
+
+						\[uv + \delta y = uv + u\delta v + v\delta u + \delta u\delta v\]
+
+						\[\delta y = u\delta v + v\delta u + \delta u\delta v\]
+
+						Recall, that our differential coefficient is the limit of the ratio of infinitely small changes in any two variables. Most typically represented by \(\delta y\) and \(\delta x\) - 
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x}\]
+
+						We divide through by \(\delta x\), so that all parts of the function are changing with respect to the same variable. This gives us:
+
+						\[\frac{\delta y}{\delta x} = u\frac{\delta v}{\delta x} + v\frac{\delta u}{\delta x} + \delta u\frac{\delta v}{\delta x}\]
+
+						Since all parts of the function are changing with respect to \(\delta x\), as \(\delta x\) approaches \(0\), \(\delta y\), \(\delta u\), and \(\delta v\) will all approach zero. We can use this information to assess the limit of the function and obtain a unqiue expression for the differential coefficient of products. Assessing the limit:
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = u\lim_{\delta x \to 0}\frac{\delta v}{\delta x} + v\lim_{\delta x \to 0}\frac{\delta u}{\delta x} + \delta u\lim_{\delta x \to 0}\frac{\delta v}{\delta x}\]
+
+						In the above expression, as \(\delta x \to 0\), \(\delta u \to 0\). Hence,
+
+						\[\delta u\lim_{\delta x \to 0}\frac{\delta v}{\delta x} = 0\]
+
+						The other limits, \(\lim_{\delta x \to 0}\frac{\delta y}{\delta x}\), \(\lim_{\delta x \to 0}\frac{\delta v}{\delta x}\), and \(\lim_{\delta x \to 0}\frac{\delta u}{\delta x}\) cannot be simplified or assessed without using the identity for the differential coefficient itself. This leaves us with:
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = u\lim_{\delta x \to 0}\frac{\delta v}{\delta x} + v\lim_{\delta x \to 0}\frac{\delta u}{\delta x}\]
+
+						Or,
+
+						\[\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]
+
+						We can use the above identity to solve for the differential of any product of functions - especially in cases where the product itself is difficult to simplify. Here's an example:
+
+						\[\]
 					</div>
 				</div>
 
