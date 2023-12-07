@@ -170,7 +170,7 @@
 
 						<div class="separator"></div>
 
-						If thus far, you're not impressed by the product rule, then you're in the right frame of mind. It would have been easy to simply expand the expression given in the above example and differentiate each term - arguably even easier than applying a complicated identity relating two functions. To understand the value in the product rule, we have to go deeper into the lions den.
+						If thus far, you're not impressed by the product rule, then you're in the right frame of mind. It would have been easy to simply expand the expression in the above example and differentiate each term individually - arguably even easier than applying a complicated identity relating two functions. To understand the value in the product rule, we have to go deeper into the lions den.
 					</div>
 				</div>
 
@@ -179,6 +179,55 @@
 				<div class="sub_box">
 					<div class="sub_heading">
 						The Quotient Rule
+					</div>					
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						The quotient rule is similar to the product rule, but instead of a product, we are considering the derivative of a quotient. Consider the following function:
+
+						\[y = \frac{u}{v}\]
+
+						Now, lets apply our first principles so that we can solve for the differential coefficient.
+
+						\[y + \delta y = \frac{u + \delta u}{v + \delta v}\]
+
+						We know that \(y = \frac{u}{v}\), hence
+
+						\[\frac{u}{v} + \delta y = \frac{u + \delta u}{v + \delta v}\]
+
+						and simplyfying, we get
+
+						\[(\frac{u}{v} + \delta y)(v + \delta v) = u + \delta u \]
+
+						\[u + \frac{u}{v}\delta v + v\delta y + \delta y\delta v = u + \delta u \]
+
+						\[\frac{u}{v}\delta v + v\delta y + \delta y\delta v = \delta u \]
+
+						\[\delta y(v + \delta v) = \delta u - \frac{u}{v}\delta v \]
+
+						\[v\delta y(v + \delta v) = v\delta u - u\delta v\]
+
+						\[v\delta y = \frac{v\delta u - u\delta v}{v + \delta v}\]
+
+						\[\delta y = \frac{v\delta u - u\delta v}{v^2 + v\delta v}\]
+
+						Recall, the differential coefficient if the limit of ratio of infinitely small changes in any two variables. We can divide by \(\delta x\) so that all parts of the function are changing with respect to infinitely small changes given by \(\delta x\). Hence, we will obtain the following expression:
+
+						\[\frac{\delta y}{\delta x} = \frac{v\frac{\delta u}{\delta x} - u\frac{\delta v}{\delta x}}{v^2 + v\delta v}\]
+
+						Now we can assess the \(\lim_{\delta x \to 0}\) and obtain the differential coefficient:
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \frac{v\lim_{\delta x \to 0}\frac{\delta u}{\delta x} - u\lim_{\delta x \to 0}\frac{\delta v}{\delta x}}{v^2 + v\delta v}\]
+
+						As \(\delta x \to 0\), \(\delta y \to 0\), \(\delta u \to 0\), and \(\delta v \to 0\). Hence, our lone \(\delta v\) in the denominator resolves to \(0\) leaving us with :
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \frac{v\lim_{\delta x \to 0}\frac{\delta u}{\delta x} - u\lim_{\delta x \to 0}\frac{\delta v}{\delta x}}{v^2}\]
+
+						Or more succinctly, we have the differential coefficient of a quotient as:
+
+						\[\frac{dy}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}\]
+
 					</div>					
 				</div>
 
