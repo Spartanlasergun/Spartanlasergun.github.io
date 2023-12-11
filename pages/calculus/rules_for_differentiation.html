@@ -275,9 +275,62 @@
 					</div>					
 				</div>
 
+				<div class="separator"></div>
+
 				<div class="sub_box">
 					<div class="sub_heading">
 						The Chain Rule
+					</div>					
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						We've explored the product rule, and we've explored the quotient rule, and now its time we explore the CHAIN rule - which is very simple. While the product rule and the quotient rule explore differential identities where conbinations of functions are concerned, the chain rule is concerned with differentiating a function of a function. This is best illustrated rather than explained. Consider the following function:
+
+						\[y = (x^2 - 4)^5\]
+
+						Now, there's no easy way to differentiate using the product or quotient rule. Perhaps we can use an exhaustive method and expand the expression until we have individual terms that we can easily differentiate, but there is a simpler way.
+						Consider the following:
+
+						\[let \ \ u = x^2 - 4\]
+
+						Hence,
+
+						\[y = u^5\]
+
+						Now we must make a slight leap in logic. We want the differential coefficient - \(\lim_{\delta x \to 0}\frac{\delta y}{\delta x}\). Considering that we have easily differentiable expressions in terms of \(y\) and \(u\), we can examine the following:
+
+						\[\frac{\delta y}{\delta x} = \frac{\delta u}{\delta x} * \frac{\delta y}{\delta u}\]
+
+						By simple rule of fractions, the above equation should resolve to give us \(\frac{\delta y}{\delta x}\). And if we apply the laws of limits we can obtain a function for our differential coefficient, i.e.
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \lim_{\delta x \to 0}\frac{\delta u}{\delta x} * \lim_{\delta x \to 0}\frac{\delta y}{\delta u}\]
+
+						Hence,
+
+						\[\frac{dy}{dx} = \frac{du}{dx} * \frac{dy}{du}\]
+
+						Applying this to our function of \(u\) and \(y\), we get:
+
+						\[\frac{du}{dx} = 2x\]
+
+						and
+
+						\[\frac{dy}{du} = 5u^4\]
+
+						Since \(u = x^2 - 4\)
+
+						\[\frac{dy}{du} = 5(x^2 - 4)^4\]
+
+						And applying our identity for a function of a function,
+
+						\[\frac{dy}{dx} = \frac{du}{dx} * \frac{dy}{du}\]
+
+						\[\frac{dy}{dx} = 2x * 5(x^2 - 4)^4\]
+
+						\[\frac{dy}{dx} = 10x(x^2 - 4)^4\]
+
+
 					</div>					
 				</div>
 
