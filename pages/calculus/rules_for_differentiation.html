@@ -344,6 +344,146 @@
 					</div>					
 				</div>
 
+				<div class="slide_box">
+					<div class="slide_text">
+						Consider the following function:
+
+						\[y = x\frac{\sqrt{1 - x}}{\sqrt{1 + x}}\]
+
+						We can make this a bit more readable as:
+
+						\[y = \frac{x(1 - x)^{\frac{1}{2}}}{(1 + x)^{\frac{1}{2}}}\]
+
+						There is no easy way to simply this function for differentiation. We might consider applying our product or quotient rules, but the function is ultimately an expression containing both a product and a quotient. In this case it is of the form:
+
+						\[y = \frac{uv}{w}\]
+
+						In order to solve it, we must understand the principles with which we were able to derive the product and quotient rules, and apply them to obtain an identity for the unique combination of functions given by \(y = \frac{uv}{w}\). This is why I have stressed that the product, quotient, and chain rules are not end's in themselves. They are simply blunt instruments - and an astute mind should be concerned with their creation much more than their application.
+						<br>
+						<br>
+						Lets begin to solve our problem. We have the function:
+
+						\[y = \frac{uv}{w}\]
+
+						Applying our first principles, we can say that
+
+						\[y + \delta y = \frac{(u + \delta u)(v + \delta v)}{w + \delta w}\]
+
+						Expanding, we get
+
+						\[y + \delta y = \frac{uv + u\delta v + v\delta u + \delta u\delta v}{w + \delta w}\]
+
+						Since \(y = \frac{uv}{w}\),
+
+						\[\frac{uv}{w} + \delta y = \frac{uv + u\delta v + v\delta u + \delta u\delta v}{w + \delta w}\]
+
+						\[\delta y = \frac{uv + u\delta v + v\delta u + \delta u\delta v}{w + \delta w} - \frac{uv}{w}\]
+
+						\[\delta y = \frac{w(uv + u\delta v + v\delta u + \delta u\delta v) - uv(w + \delta w)}{w(w + \delta w)}\]
+
+						\[\delta y = \frac{uvw + uw\delta v + vw\delta u + w\delta u\delta v - uvw - uv\delta w}{w^2 + w\delta w}\]
+
+						\[\delta y = \frac{uw\delta v + vw\delta u + w\delta u\delta v - uv\delta w}{w^2 + \delta w}\]
+
+						As has been done so many times before, we are trying to obtain an expression in terms of the differential coefficient, \(\lim_{\delta x \to 0}\frac{\delta y}{\delta x}\) - hence, we divide through by \(\delta x\). This gives us
+
+						\[\frac{\delta y}{\delta x} = \frac{uw\frac{\delta v}{\delta x} + vw\frac{\delta u}{\delta x} + w\delta u\frac{\delta v}{\delta x} - uv\frac{\delta w}{\delta x}}{w^2 + w\delta w}\]
+
+						Applying limits to our problem, we know that as \(\delta x \to 0\), \(\delta y \to 0\), \(\delta u \to 0\), \(\delta v \to 0\) and \(\delta w \to 0\). Hence,
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \frac{uw\lim_{\delta x \to 0}\frac{\delta v}{\delta x} + vw\lim_{\delta x \to 0}\frac{\delta u}{\delta x} + w\lim_{\delta x \to 0}\delta u\frac{\delta v}{\delta x} - uv\lim_{\delta x \to 0}\frac{\delta w}{\delta x}}{w^2 + w\lim_{\delta x \to 0}\delta w}\]
+
+						Thus we have
+
+						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = \frac{uw\lim_{\delta x \to 0}\frac{\delta v}{\delta x} + vw\lim_{\delta x \to 0}\frac{\delta u}{\delta x} - uv\lim_{\delta x \to 0}\frac{\delta w}{\delta x}}{w^2}\]
+
+						Or more succintly, in terms of the differential coefficient, we have
+
+						\[\frac{dy}{dx} = \frac{uw\frac{dv}{dx} + vw\frac{du}{dx} - uv\frac{dw}{dx}}{w^2}\]
+
+						Now we have an identity that we can use to solve our problem. Recall, the initial function,
+
+						\[y = \frac{x(1 - x)^{\frac{1}{2}}}{(1 + x)^{\frac{1}{2}}}\]
+
+						Solving,
+
+						\[let \ \ u = x\]
+						\[let \ \ v = (1 - x)^{\frac{1}{2}}\]
+						\[let \ \ w = (1 + x)^{\frac{1}{2}}\]
+
+						We can easily solve \(\frac{du}{dx}\)
+
+						\[\frac{du}{dx} = 1\]
+
+						Solving for \(\frac{dv}{dx}\) we apply the chain rule
+
+						\[\frac{dv}{dx} = \frac{dv}{dr} * \frac{dr}{dx} \]
+
+						\[let \ \ r = 1 - x\]
+
+						\[hence \ \ v = r^{\frac{1}{2}}\]
+
+						\[\frac{dr}{dx} = -1\]
+
+						\[\frac{dv}{dr} = \frac{1}{2}(r)^{\frac{-1}{2}}\]
+
+						\[\frac{dv}{dr} = \frac{1}{2}(1 - x)^{\frac{-1}{2}}\]
+
+						\[\frac{dv}{dr} = \frac{1}{2\sqrt{1 - x}}\]
+
+						hence,
+
+						\[\frac{dv}{dx} = \frac{1}{2\sqrt{1 - x}} * -1\]
+
+						\[\frac{dv}{dx} = \frac{-1}{2\sqrt{1 - x}}\]
+
+						Solving for \(\frac{dw}{dx}\) we apply the chain rule
+
+						\[let \ \ s = 1 + x\]
+
+						\[hence \ \ w = s^{\frac{1}{2}}\]
+
+						\[\frac{ds}{dx} = 1\]
+
+						\[\frac{dw}{ds} = \frac{1}{2}(s)^{\frac{-1}{2}}\]
+
+						\[\frac{dw}{ds} = \frac{1}{2}(1 + x)^{\frac{-1}{2}}\]
+
+						\[\frac{dw}{ds} = \frac{1}{2\sqrt{1 + x}}\]
+
+						hence,
+
+						\[\frac{dw}{dx} = \frac{1}{2\sqrt{1 + x}} * 1\]
+
+						\[\frac{dw}{dx} = \frac{1}{2\sqrt{1 + x}}\]
+
+
+						Given our identity,
+
+						\[\frac{dy}{dx} = \frac{uw\frac{dv}{dx} + vw\frac{du}{dx} - uv\frac{dw}{dx}}{w^2}\]
+
+						We can substitute to solve for the differential coefficient. Hence,
+
+						\[\frac{dy}{dx} = \frac{x(\sqrt{1 + x})(\frac{-1}{2\sqrt{1 - x}}) + \sqrt{1 - x}\sqrt{1 + x}(1) - x\sqrt{1 - x}\frac{1}{2\sqrt{1 + x}}}{1 + x}\]
+
+						\[\frac{dy}{dx} = \frac{\frac{-x\sqrt{1 + x}}{2\sqrt{1 - x}} - \frac{x\sqrt{1 - x}}{2\sqrt{1 + x}} + \sqrt{1 - x}\sqrt{1 + x}}{1 + x}\]
+
+						\[\frac{dy}{dx} = \frac{\frac{-2x(1 + x) - 2x(1 - x)}{4\sqrt{1-x}\sqrt{1+x}} + \sqrt{1-x}\sqrt{1+x}}{1+x}\]
+
+						\[\frac{dy}{dx} = \frac{\frac{-x}{\sqrt{1-x}\sqrt{1+x}} + \sqrt{1-x}\sqrt{1+x}}{1+x}\]
+
+						\[\frac{dy}{dx} = \frac{-x + (1-x)(1+x)}{\sqrt{1-x}\sqrt{1+x}} * \frac{1}{1+x}\]
+
+						\[\frac{dy}{dx} = \frac{1-x-x^2}{\sqrt{1-x}(1+x)^{\frac{3}{2}}}\]
+
+						And so we obtain an answer for the differential coefficient. Depending on how you simplified, the answer may look slightly different. (Solving for x = 0.5, should give \(\frac{dy}{dx} = 0.1925\) - in case you want to verify that it is correct.).
+						<br><br>
+						Finally, we have emerged from the belly of the beast. In my opinion, this is what calculus is all about - taking the first principles with a thorough understanding of infinitesimals, to solve problems that are seemingly unsolvable.
+					</div>					
+				</div>
+
+				<div class="separator"></div>
+
 			</div>
 		</div>
 	</body>
