@@ -484,6 +484,80 @@
 
 				<div class="separator"></div>
 
+				<div class="sub_box">
+					<div class="sub_heading">
+						Implicit Functions
+					</div>					
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						The final concept we will explore in this section is the differentiation of implicit functions. The theoretical basis for this type of differentiation is the same as as all that were previously discussed, and the distinguishing aspect of implicit differentiation is the way we approach the problem procedurally, and algebraically. Consider the following implicit function:
+
+						\[x^3 + y^3 = 3xy\]
+
+						How do we differentiate the above function seeing that it is implicitly defined in terms of \(x\) and \(y\)? The answer is simple. Since our differential coefficient is defined based on \(y = f(x)\), we just treat occurence of \(y\) as though it were a function of a function, i.e. we apply the chain rule. This is done as follows.
+
+						<div class="separator"></div>
+
+						for \(y^3\), in \(x^3 + y^3 = 3xy\)
+
+						\[let \ \ u = y \]
+
+						\[let \ \ v = u^3\]
+
+						hence, 
+
+						\[\frac{du}{dx} = \frac{dy}{dx}\]
+
+						\[\frac{dv}{du} = 3u^2 = 3y^2 \]
+
+						applying the chain rule:
+
+						\[\frac{dv}{dx} = \frac{du}{dx} * \frac{dv}{du}\]
+
+						\[\frac{dv}{dx} = 3y^2\frac{dy}{dx}\]
+
+						<div class="separator"></div>
+
+						for \(3xy\), in \(x^3 + y^3 = 3xy\) we have a product, so we apply the product rule
+
+						\[let \ \ u = 3x \]
+
+						\[let \ \ v = y \]
+
+						hence,
+
+						\[\frac{du}{dx} = 3\]
+
+						\[\frac{dv}{dx} = \frac{dy}{dx}\]
+
+						taking our identity for the product rule,
+
+						\[\frac{dy}{dx} = v\frac{du}{dx} + u\frac{dv}{dx}\]
+
+						hence,
+
+						\[\frac{dy}{dx} = 3y + 3x\frac{dy}{dx}\]
+
+						<div class="separator"></div>
+
+						Differentiating our original equation given as \(x^3 + y^3 = 3xy\), we get:
+
+						\[3x^2 + 3y^2\frac{dy}{dx} = 3y + 3x\frac{dy}{dx}\]
+
+						We want our differential in terms of \(\frac{dy}{dx}\), so we manipulate:
+
+						\[\frac{dy}{dx}(3y^2 - 3x) = 3y - 3x^2\]
+
+						\[\frac{dy}{dx} = \frac{3y - 3x^2}{3y^2 - 3x}\]
+
+						\[\frac{dy}{dx} = \frac{y - x^2}{y^2 - x}\]
+
+						And so we obtain our differential. This brings us to the end of 'rules for differentiation'. Once again, I emphasize that the value in the rules come from their derivation, and is not the rule itself.
+					</div>					
+				</div>
+
 			</div>
 		</div>
 	</body>
