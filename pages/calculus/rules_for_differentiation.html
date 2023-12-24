@@ -71,7 +71,7 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						There are several elementary rules that serve as guidelines for applying calculus to more complex problems. These are known as the Product Rule, the Quotient Rule, and the Chain Rule. It's important to discuss the implications of these rules beforehand, because while they are a great starting point for a more complex understanding of calculus, they are just blunt instruments shaped by the first principles of calculus. Consequently, they serve little more than to develop one's intuition for algebraic manipulations of problems involving differentials. In this respect, I would advise giving greater consideration to their proofs rather than taking the identities wholesale.
+						There are several elementary rules that serve as guidelines for applying calculus to more complex problems. These are known as the Product Rule, the Quotient Rule, and the Chain Rule. It's important to discuss the implications of these rules beforehand, because while they are a great starting point for a more complex understanding of calculus, they are just blunt instruments shaped by the first principles of calculus. Consequently, they serve little more than to develop one's intuition for algebraic manipulations of problems involving differentials. In this respect, I would advise giving greater consideration to their proofs rather than taking the formulae wholesale.
 					</div>
 				</div>
 
@@ -122,7 +122,7 @@
 
 						\[\delta u\lim_{\delta x \to 0}\frac{\delta v}{\delta x} = 0\]
 
-						The other limits, \(\lim_{\delta x \to 0}\frac{\delta y}{\delta x}\), \(\lim_{\delta x \to 0}\frac{\delta v}{\delta x}\), and \(\lim_{\delta x \to 0}\frac{\delta u}{\delta x}\) cannot be simplified or assessed without using the identity for the differential coefficient itself. This leaves us with:
+						The other limits, \(\lim_{\delta x \to 0}\frac{\delta y}{\delta x}\), \(\lim_{\delta x \to 0}\frac{\delta v}{\delta x}\), and \(\lim_{\delta x \to 0}\frac{\delta u}{\delta x}\) cannot be simplified or assessed without applying the formula for the differential coefficient itself. This leaves us with:
 
 						\[\lim_{\delta x \to 0}\frac{\delta y}{\delta x} = u\lim_{\delta x \to 0}\frac{\delta v}{\delta x} + v\lim_{\delta x \to 0}\frac{\delta u}{\delta x}\]
 
@@ -130,7 +130,7 @@
 
 						\[\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]
 
-						We can use the above identity to solve for the differential of any product of functions - especially in cases where the product itself is difficult to simplify. An example is given below.
+						We can use the above formula to solve for the derivative of any product of functions - especially in cases where the product itself is difficult to simplify. An example is given below.
 
 						<div class="separator"></div>
 
@@ -144,7 +144,7 @@
 
 						\[(x^2 - 5)(x^2 + 5)\]
 
-						We can apply our product identity to easily solve for the differential. 
+						We can apply our product formula to easily solve for the differential. 
 
 						\[let \ \ u = x^2 - 5\]
 						
@@ -154,7 +154,7 @@
 
 						\[\frac{dv}{dx} = 2x\]
 
-						Using our identity:
+						Using our formula:
 
 						\[\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}\]
 
@@ -170,7 +170,7 @@
 
 						<div class="separator"></div>
 
-						If thus far, you're not impressed by the product rule, then you're in the right frame of mind. It would have been easy to simply expand the expression in the above example and differentiate each term individually - arguably even easier than applying a complicated identity relating two functions. To understand the value in the product rule, we have to go deeper into the lions den.
+						If thus far, you're not impressed by the product rule, then you're in the right frame of mind. It would have been easy to simply expand the expression in the above example and differentiate each term individually - arguably even easier than applying a complicated formula relating two functions. To understand the value in the product rule, we have to go deeper into the lions den.
 					</div>
 				</div>
 
@@ -212,7 +212,7 @@
 
 						\[\delta y = \frac{v\delta u - u\delta v}{v^2 + v\delta v}\]
 
-						Recall, the differential coefficient if the limit of ratio of infinitely small changes in any two variables. We can divide by \(\delta x\) so that all parts of the function are changing with respect to infinitely small changes given by \(\delta x\). Hence, we will obtain the following expression:
+						Recall, the differential coefficient is the limit of ratio of infinitely small changes in any two variables. We can divide by \(\delta x\) so that all parts of the function are changing with respect to infinitely small changes given by \(\delta x\). Hence, we will obtain the following expression:
 
 						\[\frac{\delta y}{\delta x} = \frac{v\frac{\delta u}{\delta x} - u\frac{\delta v}{\delta x}}{v^2 + v\delta v}\]
 
@@ -242,13 +242,13 @@
 
 						\[y = \frac{x + 1}{x + 2}\]
 
-						There is no easy way to differentiate this through simple algebraic manipulation of the terms. However, we can apply our identity for the differential coefficient of a quotient to solve the problem.
+						There is no easy way to differentiate this through simple algebraic manipulation of the terms. However, we can apply our formula for the differential coefficient of a quotient to solve the problem.
 
 						\[let \ \ u = x + 1\]
 
 						\[let \ \ v = x + 2\]
 
-						We know from our identity that 
+						We know from our formula that 
 
 						\[\frac{dy}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}\]
 
@@ -258,7 +258,7 @@
 
 						\[\frac{dv}{dx} = 1\]
 
-						Substituting into our identity:
+						Applying the formula for the derivative of a quotient:
 
 						\[\frac{dy}{dx} = \frac{(x + 2)(1) - (x + 1)(1)}{(x + 2)^2}\]
 
@@ -270,7 +270,7 @@
 
 						<div class="separator"></div>
 
-						Perhaps now you're a tad more impressed with the quotient rule than the product rule. After all, there was no was to simplify the expression to easily obtain the differential - and the quotient rule served great purpose to that end. However, I advise caution. As stated in the beginning, the quotient rule should be considered no more than a passing fancy in the world of calculus. It's the principle of its derivation that ultimately is of use. Before I can illustrate this, we have one more rule to explore - the chain rule.
+						Perhaps now you're a tad more impressed with the quotient rule than the product rule. After all, there was no was to simplify the expression to easily obtain its derivative - and the quotient rule served great purpose to that end. However, I advise caution. As stated in the beginning, the quotient rule should be considered no more than a passing fancy in the world of calculus. It's the principle of its derivation that ultimately is of use. Before I can illustrate this, we have one more rule to explore - the chain rule.
 
 					</div>					
 				</div>
