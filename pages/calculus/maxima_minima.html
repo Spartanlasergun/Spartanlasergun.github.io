@@ -76,11 +76,55 @@
 				<div class="slide_box">
 					<div class="slide_text">
 						<br>
-						The graph on the right illustrates the function \(y = -x^2\). This graph can be described mathematically as having a maximum point at \(x = 0\). As \(x\) approaches the maximum point from the left it decreases, and as it approahes the maximum point from the right it also decreases, leading to a maxmimum value at \(x = 0, \ \ y = 0\). Notice also, that the \(y\) values increase as the function approaches its maximum, and it decreases as it moves away from the maximum.  
+						The graph on the right illustrates the function \(y = -x^2\). This graph can be described mathematically as having a maximum point at \(x = 0, y = 0\). Looking at changes in the gradient function, there is an interesting property concerning curves that have a maxmimum point. If the \(y\) values decrease as \(x\) increases, the gradient - \(\frac{dy}{dx}\) - is positive, and if \(y\) decreases as \(x\) increases then the gradient - \(\frac{dy}{dx}\) - is negative. At it's maximum, the tangent to the curve will be completely horiztonal, meaning that \(\frac{dy}{dx}\) must be equal to \(0\).
 					</div>				
 					<div class="slide_img_left">
 						<img src="../../images/maximum_point.png" alt="maximum_point">
 					</div>	
+				</div>
+
+				<div class="slide_box">
+					<div class="slide_text">
+						Using this information we can determine whether any aribtrary function has a maximum point, and we can also determine the exact coordinates of that point. We know that at the maximum point, the gradient will be equal to \(0\). Taking the derivative of our function,
+
+						\[y = -x^2\]
+
+						\[\frac{dy}{dx} = -2x\]
+
+						at \(\frac{dy}{dx} = 0\),
+
+						\[-2x = 0\]
+
+						\[x = 0\]
+
+						Substituting into our curve function, 
+
+						\[y = -(0^2)\]
+
+						\[y = 0\]
+
+						Hence, we can see that the maximum point does indeed occur at \(x = 0, \ \ y = 0\).
+
+						Now lets consider the points on the graph at \(x = -2, -1, 0, 1, 2\).
+						<br>
+						Using our funtion, we can solve for the gradient at these points,
+
+						\[\frac{dy}{dx} = -2x\]
+
+						at \(x = -2, -1, 0, 1, 2\),
+
+						\[for \ \ x = -2, \ \ \ y = -(-2^2) = -4, \ \ \frac{dy}{dx} = -2(-2) = 4\]
+
+						\[for \ \ x = -1, \ \ \ y = -(-1^2) = -1, \ \ \frac{dy}{dx} = -2(-1) = 2\]
+
+						\[for \ \ x = 0, \ \ \ y = -(0^2) = 0, \ \ \frac{dy}{dx} = -2(0) = 0\]
+
+						\[for \ \ x = 1, \ \ \ y = -(2^2) = 4, \ \ \frac{dy}{dx} = -2(1) = -2\]
+
+						\[for \ \ x = 2, \ \ \ y = -(1^2) = 1, \ \ \frac{dy}{dx} = -2(2) = -4\]
+
+						Looking at the above values, we can see that as \(x\) increases and \(y\) increases, the gradient is positive, and as \(x\) increases and \(y\) decreases, the gradient is negative. This is an important point, as we will see that not all graphs have a maximum point, and we can distinguish the nature of the graph without having to plot its values through some simple calculations as is shown above. There are even simpler ways to do this, but for now we will move on to an examination of Minimum Points.
+					</div>					
 				</div>
 
 				<div class="separator"></div>
