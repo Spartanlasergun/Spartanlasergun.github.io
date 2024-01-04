@@ -199,7 +199,7 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						The Inflexion Point, is the mathematical way of referring to a point on the graph where the sign of the differential itself is neither positive nor negative, i.e. it occurs directly in between a minimum and maximum point. The graph below illustrates this.
+						In this section, I would like to discuss what is known as an inflexion point. This is a unique point on curve where the curvature changes from concave upwards to concave downwards (or vice versa), as shown in the graph below.
 					</div>
 				</div>
 
@@ -209,10 +209,86 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
+						In the above graph, the inflexion point occurs directly between a maximum and minimum point. It should be noted that this is not the case for all inflexion points, as in some cases the curve bends in such a way that the maximum and minimum points occur directly at the point of inflexion rather than before and after. Regardless, the inflexion point is in all cases considered to be simaltaneously a maximum and minimum point.
+						<br>
+						<br>
+						The equation for the curve above is given by:
+
+						\[y = (x - 1)(x - 2)(x - 3)\]
+
+						which we can simplify to:
+
+						\[y = x^3 - 6x^2 + 11x - 6\]
+
+						we can also easily find its gradient function (which is also plotted above),
+
+						\[\frac{dy}{dx} = 3x^2 - 12x + 11\]
+
+						and for simplicity sake I will also calculate the second order differential as it of interest concerning the unique properties of the inflexion point.
+
+						\[\frac{d^{2}y}{dx^2} = 6x - 12\]
+
+						This function is also plotted in the above graph.
+						<br>
+						<br>
+						We have already discussed how to find maximum and minimum points. They occur at \(\frac{dy}{dx} = 0\). Lets solve this quickly.
+
+						\[\frac{dy}{dx} = 0\]
+
+						\[3x^2 - 12x + 11 = 0\]
+
+						\[...\]
+
+						\[x = 1.42 \ \ \ and \ \ \ x = 2.58\]
+
+						Thus, we can see that our maximum and minimum points occur at \(x = 1.42\) and \(x = 2.58\). In the previous section, we used an exhaustive technique to show that the curve approaches either a minimum or maximum value based on changes in the sign of the gradient before and after the points. However, there is a simpler way. One of the unqiue properties of these points, is that the second order differential (\(\frac{d^{2}y}{dx^2}\)) yields a negative value at a maximum point, or a positive value at a minimum point. If the point is neither - i.e. a point of inflexion - the value of \(\frac{d^{2}y}{dx^2} = 0\). Using this property, we can check which of our points is a maximum or minimum, and we can also solve for the value at which the point of inflexion occurs.
+						<div class="separator"></div>
+
+						At \(x = 1.42\),
+
+						\[\frac{d^{2}y}{dx^2} = 6(1.42) - 12\]
+
+						\[\frac{d^{2}y}{dx^2} = -3.48\]
+
+						The sign is negative and hence, the maximum point occurs at \(x = 1.42\)
+						<div class="separator"></div>
 						
+						At \(x = 2.58\),
+
+						\[\frac{d^{2}y}{dx^2} = 6(2.58) - 12\]
+
+						\[\frac{d^{2}y}{dx^2} = 3.48\]
+
+						The sign is positive and hence, the minimum point occurs at \(x = 2.58\)
+
+						<div class="separator"></div>
+
+						At \(\frac{d^{2}y}{dx^2} = 0\), the point of inflexion occurs,
+
+						\[\frac{d^{2}y}{dx^2} = 0\]
+
+						\[6x - 12 = 0\]
+
+						\[x = \frac{12}{6} = 2\]
+
+						Hence, the point of inflexion occurs at \((2, 0)\)
 					</div>
 				</div>
 
+				<div class="separator"></div>
+
+				<div class="sub_box">
+					<div class="sub_heading">
+						General Rules
+					</div>					
+				</div>
+
+				<div class="plain_text">
+					A lot of information regarding the properties of curves have been discussed so far, and its important to note that these properties are hardly intuitive - especially for someone encountering them for the first time. That being said, they do appeal to very general rules that have direct relevance to problems in our daily lives. I will illustrate some of these problems later on, but first I want to create a list of rules that can generally capture what we've discussed about maximum points, minimum points and points of inflexion.
+
+				</div>
+				
+				<div class="separator"></div>
 
 				
 			</div>
