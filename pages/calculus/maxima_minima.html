@@ -396,7 +396,7 @@
 							</div>
 						</div>
 
-						Find the maximum and minimum values of the following function and state the corresponding values of \(x\),
+						Find the maximum and minimum points on the curve given by the following function:
 
 						\[y = x^3 - 12x\]
 
@@ -451,6 +451,101 @@
 						Hence, the maximum point occurs at \((-2, \ 16)\).
 
 						<div class="separator"></div>
+
+						<div class="sub_box">
+							<div class="sub_section_heading">
+								Example two
+							</div>
+						</div>
+
+						A particle is projected at an angle \(\theta\) with initial velocity \(u\). Its horizontial displacement \(x\) and height\(y\) are connected by the equation:
+
+						\[y = x\tan \theta - \frac{gx^2}{2u^2\cos^2\theta}\]
+
+						What is the maximum height to which the particle rises, and how far has it travelled horizontally? (\(g\) is the acceleration due to gravity, a constant.)
+						<br>
+						<br>
+						We can begin to solve this equation by simplifying our expression a bit.
+
+						\[let \ a = \tan\theta\]
+
+						\[let \ b = \cos^2\theta\]
+
+						Hence,
+
+						\[y = ax - \frac{gx^2}{2bu^2}\]
+
+						\[y = ax - \frac{g}{2bu^2}x^2\]
+
+						Solving for \(\frac{dy}{dx}\)
+
+						\[\frac{dy}{dx} = a - \frac{gx}{bu^2}\]
+
+						\[\frac{dy}{dx} = \frac{abu^2 - gx}{bu^2}\]
+
+						Based on the description given in the question, we can assume that this particle is travelling in parabolic motion and attains a maximum height that is analagous to a maximum point on a curve describing its motion. We know that the gradient at the maximum is zero, hence we can solve for maximum point.
+
+						\[\frac{abu^2 - gx}{bu^2} = 0\]
+
+						\[abu^2 - gx = 0\]
+
+						\[gx = abu^2\]
+
+						\[x = \frac{abu^2}{g}\]
+
+						Substituting our values for \(a\) and \(b\),
+
+						\[x = \frac{\tan(\theta)\cos^2(\theta) u^2}{g}\]
+
+						Hence, the maximum \(x\) value occurs at \(x = \frac{\tan(\theta)\cos^2(\theta) u^2}{g}\). However, we are interested in the maximum height. This means we need to solve for the \(y\) value. Using our simpler format for x, 
+
+						\[y = a (\frac{abu^2}{g}) - \frac{g(\frac{abu^2}{g})^2}{2u^2b}\]
+
+						\[...\]
+
+						\[y = \frac{a^2bu^2}{g} - \frac{a^2bu^2}{2g}\]
+
+						\[y = \frac{a^2bu^2}{2g}\]
+
+						Substituting our trigonometric values,
+
+						\[y = \frac{\tan^2(\theta)\cos^2(\theta) u^2}{2g}\]
+
+						\[y = \frac{u^2\sin^2\theta}{2g}\]
+
+						Hence, the particle attains a maximum height at \(y = \frac{u^2\sin^2\theta}{2g}\). We would also like to know the distance the particle has travelled horizontally. We know that the curve describing its motion is going to cut the \(x\) axis at 0 - rest - and at the farthest point travelled. Hence we can set the function equal to 0 and solve for this point.
+
+						\[y = ax - \frac{gx^2}{2bu^2}\]
+
+						Hence,
+
+						\[ax - \frac{gx^2}{2bu^2} = 0\]
+
+						\[\frac{gx^2}{2bu^2} = ax\]
+
+						\[gx^2 = 2abu^2x\]
+
+						\[gx = 2abu^2\]
+
+						\[x = \frac{2abu^2}{g}\]
+
+						Substituting our trigonometric functions:
+
+						\[x = \frac{2u^2\tan(\theta)\cos^2(\theta)}{g}\]
+
+						This can be simplified to
+
+						\[x = \frac{u^2\sin(2\theta)}{g}\]
+
+						Hence, the particle acheives maximum distance at \(x = \frac{u^2\sin(2\theta)}{g}\)
+
+						<div class="separator"></div>
+
+						<div class="sub_box">
+							<div class="sub_section_heading">
+								Example Three
+							</div>
+						</div>
 
 					</div>
 				</div>
