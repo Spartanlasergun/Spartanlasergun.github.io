@@ -537,7 +537,7 @@
 
 						\[x = \frac{u^2\sin(2\theta)}{g}\]
 
-						Hence, the particle acheives maximum distance at \(x = \frac{u^2\sin(2\theta)}{g}\)
+						Hence, the particle achieves maximum horizontal distance at \(x = \frac{u^2\sin(2\theta)}{g}\)
 
 						<div class="separator"></div>
 
@@ -546,6 +546,103 @@
 								Example Three
 							</div>
 						</div>
+
+						Problems involving parabolic motion are quite common in elementary math and serve the very useful purpose of demostrating the practical application of math in a relatable way. However, there is another angle that we can take with respect to exploring the practical application of calculus. In fact the primary point of the section is to explore these ideas in particular. What I'm referring to is known as an optimization problem, and even at low levels they can make questions of parabolic motion look rather cute and underwhelming.
+						<br>
+						<br>
+						In this example I am going to explore a problem that is similar to some historically famous issues that were tackled by mathematicians like Fermat and Descartes. The problem itself is no more than a novel conundrum that might amuse a mathematician, but it's the intuition behind it's solution that is important. The problem is as follows:
+						<br>
+						<br>
+						A rectangular sheet of tin, \(30cm * 24cm\), has four equal squares cut out at the corners, and the sides are then turned up to form a rectangular box. What must be the length of the side of each square cut away so that the volume of the box may be as great as possible?
+						<br>
+						<br>
+						How would you solve this? The answer is a simple one, but what it takes to arrive at the solution is a test of how comfortable you are with applying calculus (or math) to the real world. I make a point of saying this because most of us are not as comfortable as I indicated you should be. After all, serious application of math is a rarity even in the age of Artificial Intelligence. (AI is itself an optimization problem - take note.)
+						<br>
+						<br>
+						The first step is to derive the function that represents the change in the sheet of tin based on the knowledge that has been provided. I use the word derive liberally in this context, as the derivation is extremely intuitive. Lets examine what we know:
+						<ul>
+							<li>
+								We know that the length of the sides of the sheet of tin is changing.
+							</li>
+							<li>
+								We know that the length of one side is 30cm, and the length of the other side is 24cm.
+							</li>
+							<li>
+								Since squares have been cut out from each corner, we know that the length of each side is decreasing.
+							</li>
+							<li>
+								Since the sides are folded up to make a box from the point that the squares are cut, we know that the volume increases as the sides decrease, i.e. from no volume to some maximum
+							</li>
+							<li>
+								We know that the volume of a rectangle is given by the \(length * width * height\).
+							</li>
+						</ul>
+						We are concerned with this change in volume as we want to understand the maximum value based on changes in the length of the sides and subsequent increase in height.
+						<br>
+						The volume is given by the function
+
+						\[V = length * width * height\]
+
+						The length and width are known variables, wheares the height is unknown. We can represent this as follows:
+
+						\[V = 30 * 24 * x\]
+
+						Since the length of the sides decrease in proportion as the height increases, we can write:
+
+						\[V = (30 - x)(24 - x)(x)\]
+
+						Squares are cut out, so the amount subtracted from the length is equivalent to the amount subtracted from the height, as is represented in the above equation. However, we are cutting out squares from all four corners. This means subtracting the same amount from both sides of the length and the width. Hence the change is actually represented by
+
+						\[V = (30 - 2x)(24 - 2x)(x)\]
+
+						And there you have it! The above function describes the change in volume of our sheet of tin. Expanding you get
+
+						\[V = (720 - 60x - 48x + 4x^2)(x)\]
+
+						\[V = 4x^3 - 108x^2 + 720x\]
+
+						So the change in volume of our tin sheet as it is made into a rectangular box is described by the above function. What we want to know, is what height corresponds to a maximum volume in the tin sheet. This part is simple. The function clearly represents a curve, and our understanding of maximum and minimum value on a curve is readily applicable.
+						<br>
+						<br>
+						Differentiating, I get
+
+						\[\frac{dV}{dx} = 12x^2 - 216x + 720\]
+
+						At the maximum, the gradient is 0, hence
+
+						\[12x^2 - 216x + 720 = 0\]
+
+						\[x^2 - 18x + 60 = 0\]
+
+						Using our quadratic formula, 
+
+						\[a = 1, \ \ b = -18, \ \ c = 60\]
+
+						\[x = \frac{18 \pm \sqrt{(-18^2) - 4(1)(60)}}{2(1)}\]
+
+						\[x = \frac{18 \pm \sqrt{324 - 240}}{2}\]
+
+						\[x = \frac{18 \pm \sqrt{84}}{2}\]
+
+						\[x = \frac{18 \pm 9.165}{2}\]
+
+						\[x = 13.58, \ 4.4175\]
+
+						We can check for a maximum point using \(\frac{d^2y}{dx^2}\),
+
+						\[\frac{d^2y}{dx^2} = 24x - 216\]
+
+						at \(x = 13.58\),
+
+						\[\frac{d^2y}{dx^2} = 24(13.58) - 216 = 109.92\]
+
+						The answer is positive, hence this is a minimum point, not a maximum. At \(x = 4.4175\),
+
+						\[\frac{d^2y}{dx^2} = 24(4.4175) - 216 = -109.98\]
+
+						The answer is negative, hence the maximum point occurs at \(x = 4.4175cm\). Thus, the maximum volume is achieved when the square cut out of the tin sheet has a side of \(4.4175cm\).								
+
+						<div class="separator"></div>
 
 					</div>
 				</div>
