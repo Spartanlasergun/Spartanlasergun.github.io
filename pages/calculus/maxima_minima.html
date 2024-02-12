@@ -386,7 +386,7 @@
 
 				<div class="slide_box">
 					<div class="slide_text">
-						Most often, worked examples are used to illustrate the step by step solution to a problem in order to give the person reading an understanding of the general algebraic complexity and key ideas in manipulating different variables. While this section does provide worked explanations in this way, the primary intention is to convey the key intuition behind the practical usage of maximum and minimum points in calculus. This will become more apparent as we delve into more real word problems. However, I still begin with some soultions to simple questions.
+						Most often, worked examples are used to illustrate the step by step solution to a problem in order to give the person reading an understanding of the general algebraic complexity and key ideas in manipulating different variables. While this section does provide worked explanations in this way, the primary intention is to convey the key intuition behind the practical usage of maximum and minimum points in calculus. This will become more apparent as we delve into real word problems. However, I still begin with some soultions to simple questions.
 
 						<div class="separator"></div>
 
@@ -643,6 +643,46 @@
 						The answer is negative, hence the maximum point occurs at \(x = 4.4175cm\). Thus, the maximum volume is achieved when the square cut out of the tin sheet has a side of \(4.4175cm\).								
 
 						<div class="separator"></div>
+
+						<div class="sub_box">
+							<div class="sub_section_heading">
+								Example Four
+							</div>
+						</div>
+
+						Having been through the previous problem it should be clear that the 'opitmization' problem as was presented is not at heart reliant on a logical understanding of algebra, calculus, or any other branch of math thereafter. In fact, your ability to arrive at a soultion is tied to your conceptualization of the problem. This in itself constitutes the mathematical muscle that we so rarely ever flex, and is vitally important to the application of math to the real world.
+						<br>
+						<br>
+						To expand on this idea I am going to delve into a final example in this section. Specifically we are going to look at a derivation of linear regression, which should reflect clearly the mathematical brawn of optimization. The calculus behind the derivation is slightly beyond the topics that have been covered so far, as it extends to partial differentiation. However, the key intuition is firmly rooted in an understanding of the properties of curves - particularly, the idea of the maximum and minimum point.
+						<br>
+						<br>
+						To begin with, lets consider the following randomly scattered set of datapoints.
+
+						<div class="center_image">
+							<img src="../../images/scatterplot.png" alt="scatterplot">
+						</div>
+
+						Straightaway, there are many questions that we can pose around this data. However, one particular trend of thought is important. I am referring to the idea of the relationship between the \(x\) and \(y\) variables that define the scattered data above. Why? Because in the real world the simplest case of understanding complex human problems typically start with the relationship that two things can have with each other. The economy and the murder rate, the education system and the economy, your calorie intake and weight gain/loss over the next six months...the list goes on. These are all variables that we can consider independently, and go out into the real world to investigate. Following this we might want to consider the relationship between multiple sets of data, and as such it is generally useful to have a technique that allow us to understand such a relationship for any given set of data.
+						<br>
+						<br>
+						The keywords here are "any given set of data." This is where our randomly scattered datapoints come in handy. If I can mathematically determine what the relationship is between the datapoints that have been generated randomly, I would have a solution that I can apply to "any given set of data". With respect to linear regression, the relationship that we want to understand has to do with how the variable in \(y\) changes as the variable in \(x\) changes. From a glance you can tell that the datapoints do not conform to a straight line or curve that we can use as a starting point. Instead, lets borrow a simple idea in statistics - the mean. Let's assume that their is a relationship between \(x\) and \(y\), and that this relationship revolves around the center of the data. Below, you can see this central plotted on the graph. 
+
+						<div class="center_image">
+							<img src="../../images/scatterplot_center.png" alt="scatterplot center">
+						</div>
+
+						This assumption is important, because without a pre-conceived understanding of potential trends in any dataset, I can always start with a simple average value for both \(x\) and \(y\). Now lets extend this thinking a bit. How can I find the line that passes through the center of this data? The relationship between \(x\) and \(y\) may not necessarily be linear, but the only way to know is to come up with a mathematical solution than can allow us to test the theory - i.e. that there is some linear relationship between \(x\) and \(y\).
+						<br>
+						<br>
+						The solution to this idea is essentially what we know as linear regression. While it is not an overarching solution to all variables \(x\) and \(y\), it does allow us at the very least a pathway by which we can rule out one of the possible relationships between any two variables. To arrive at a solution we must consider an imaginary line passing through the center of our data. This is illustrated below.
+
+						<div class="center_image">
+							<img src="../../images/scatterplot_regression.png" alt="regression line">
+						</div>
+
+						Being a straight line, we can take its general function as:
+
+						\[y = mx + c\]
 
 					</div>
 				</div>
