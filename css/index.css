@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.banner-header {
+    background-image: url('images/banner.png'); /* Replace 'path/to/your/banner-image.jpg' with the path to your banner image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image within the header */
+    height: 200px; /* Set the height of the header */
+    text-align: center; /* Center-align any content within the header if needed */
+    color: white; /* Set text color to white or any other suitable color for better readability */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
