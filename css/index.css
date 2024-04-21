@@ -22,7 +22,7 @@ body {
     padding-left: 50px;
     margin-top: 20px;
     margin-left: 20px;
-    background: linear-gradient(to right, rgba(34, 177, 192, 0.5), rgba(34, 177, 192, 0.0));
+    background: linear-gradient(to right, rgba(34, 177, 192, 0.4), rgba(245, 40, 148, 0.2));
     width: 40%;
     height: 50px;
     border-bottom: 2px solid grey;
