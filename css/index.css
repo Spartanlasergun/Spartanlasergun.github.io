@@ -3,9 +3,13 @@ body {
     overflow: hidden;
 }
 
-img {
-    height: 70px;
-    width: 1500px;
+.logo {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 footer {
