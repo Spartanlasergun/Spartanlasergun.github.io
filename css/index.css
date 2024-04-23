@@ -37,6 +37,18 @@ body {
     color: rgba(248, 248, 248, 1.0);
 }
 
+.initial_tags {
+    display: flex;
+    position: absolute;
+    top: 140px;
+    margin-left: 20%;
+    font-family: Merriweather;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.5;
+    border: 2px solid black;
+}
+
 .profile {
     display: flex;
     position: absolute;
