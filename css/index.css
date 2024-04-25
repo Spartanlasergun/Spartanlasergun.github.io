@@ -99,11 +99,12 @@ body {
 
 @keyframes fade {
   0%, 100% {opacity: 0;}
-  16.6%, 83.3% {opacity: 1;}
+  5%, 70% {opacity: 1;}
 }
 
 
-.fade {animation: fade 60s infinite;}
+.fade {
+    animation: fade 60s infinite;}
 
 .slideshow img:nth-child(1) {animation-delay: 0s;}
 .slideshow img:nth-child(2) {animation-delay: 10s;}
