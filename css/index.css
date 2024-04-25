@@ -66,11 +66,29 @@ body {
 }
 
 .main::-webkit-scrollbar-thumb:vertical:hover {
-    background-color: #eb5e28;    /* color of the scroll thumb */
+    background: linear-gradient(
+    to bottom, 
+    red, 
+    orange, 
+    yellow, 
+    green, 
+    blue, 
+    indigo, 
+    violet
+  );    /* color of the scroll thumb */
 }
 
 .main::-webkit-scrollbar-thumb:vertical:active {
-    background-color: #eb5e28;    /* color of the scroll thumb */
+    background: linear-gradient(
+    to bottom, 
+    red, 
+    orange, 
+    yellow, 
+    green, 
+    blue, 
+    indigo, 
+    violet
+  );    /* color of the scroll thumb */
 }
 
 
