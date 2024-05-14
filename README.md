@@ -1,5 +1,3 @@
-### Spartanlasergun's notes
-
-Visit:
+Repository for experimenting with web design.
 
 https://spartanlasergun.github.io
